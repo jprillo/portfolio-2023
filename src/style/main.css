@@ -1,0 +1,710 @@
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Roboto&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.light-back2 {
+  background: var(--sbg);
+}
+
+.back {
+  background: var(--bg);
+}
+
+.light-back1 {
+  background: white;
+}
+
+.secondary-back {
+  background: #213600;
+}
+
+.primary-back {
+  background: #9B3CE3;
+}
+
+.secondary-color {
+  color: #213600;
+}
+
+.primary-color {
+  color: #9B3CE3;
+}
+
+/* Nav Colors */
+h1, h2, h3, h4, h5 {
+  font-family: "Jolly Lodger", cursive;
+  font-weight: normal;
+  margin-bottom: 0.25em;
+}
+
+li {
+  font-family: "Jolly Lodger", cursive;
+  font-size: 20px;
+  color: white;
+}
+@media (min-width: 1024px) {
+  li {
+    font-size: 22px;
+  }
+}
+
+h1 {
+  color: white;
+  font-size: clamp(45px, 5.5vw, 200px);
+  font-family: "Jolly Lodger", cursive;
+  line-height: 105%;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 45px;
+  }
+}
+
+.secondary-font {
+  color: #213600;
+}
+
+h4 {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+h5 {
+  color: #9B3CE3;
+  font-size: 22px;
+  text-align: left;
+}
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 25px;
+  }
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .flex {
+    flex-direction: row;
+  }
+}
+.flex-center {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .flex-center {
+    flex-direction: row;
+  }
+}
+.flex-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 1024px) {
+  .flex-reverse {
+    flex-direction: row;
+  }
+}
+
+.col-1 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-1 {
+    width: 8.3333333333%;
+  }
+}
+.col-2 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-2 {
+    width: 16.6666666667%;
+  }
+}
+.col-3 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-3 {
+    width: 25%;
+  }
+}
+.col-4 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-4 {
+    width: 33.3333333333%;
+  }
+}
+.col-5 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-5 {
+    width: 41.6666666667%;
+  }
+}
+.col-6 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-6 {
+    width: 50%;
+  }
+}
+.col-7 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-7 {
+    width: 58.3333333333%;
+  }
+}
+.col-8 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-8 {
+    width: 66.6666666667%;
+  }
+}
+.col-9 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-9 {
+    width: 75%;
+  }
+}
+.col-10 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-10 {
+    width: 83.3333333333%;
+  }
+}
+.col-11 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .col-11 {
+    width: 91.6666666667%;
+  }
+}
+.col-12 {
+  width: 100%;
+}
+
+.gap-1em {
+  gap: 1em;
+}
+
+.gap-2 {
+  gap: 35px;
+}
+
+.gap-3em {
+  gap: 3em;
+}
+
+.gap-5em {
+  gap: 5em;
+}
+
+.pad-3em {
+  padding: 3em;
+}
+
+.pad-10 {
+  padding: 10vh 10vw;
+}
+
+.pad-5 {
+  padding: 5vh 5vw;
+}
+
+.v-pad-5 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.h-pad-10 {
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+
+.v-pad-1 {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.v-pad-10 {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.alt-background {
+  background: #1B202B;
+}
+
+.vertical-padding {
+  padding: 10vh 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.mobile-hide {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .mobile-hide {
+    display: block;
+  }
+}
+
+.button {
+  padding: 0.75em 2em;
+}
+.button.primary {
+  background: #9B3CE3;
+  cursor: pointer;
+}
+.button.primary p {
+  color: white;
+}
+.button.secondary {
+  background: inherit;
+  cursor: pointer;
+  border: 1px solid #9B3CE3 p;
+  border-color: #9B3CE3;
+}
+@media (min-width: 1024px) {
+  .button {
+    padding: 0.75em 3em;
+  }
+}
+
+/************ BURGER ***********************/
+#hamburger-wrap {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  margin-left: auto;
+}
+@media (min-width: 1024px) {
+  #hamburger-wrap {
+    display: none;
+  }
+}
+
+.burger-open {
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  position: absolute;
+  height: 10%;
+  width: 70%;
+  background: #9B3CE3;
+  box-shadow: 0.5px 0.5px black;
+  border-radius: 10px;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+}
+
+.line01 {
+  top: 25%;
+}
+
+.line02 {
+  top: 47%;
+}
+
+.line03 {
+  top: 69%;
+}
+
+.burger-close .line {
+  box-shadow: none;
+  background: #213600;
+}
+
+.burger-close .line01 {
+  transform: rotate(45deg);
+  top: 49%;
+}
+
+.burger-close .line02, .burger-close .line03 {
+  transform: rotate(-45deg);
+  top: 49%;
+}
+
+/**************************************END HAMBURGER*******************************/
+.navagation-wrap.mobile-wrap #hamburger-wrap {
+  position: fixed;
+  z-index: 100000;
+  right: 25px;
+} /*Hack for keeping hamburger in place  */
+#active {
+  color: #000139;
+}
+
+#main-nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: inherit;
+  align-items: center;
+  transition: background 0.5s;
+  position: absolute;
+  width: 94vw;
+}
+@media (min-width: 1024px) {
+  #main-nav-wrap {
+    width: 90vw;
+    transition: background 0s;
+  }
+}
+@media (min-width: 1280px) {
+  #main-nav-wrap {
+    width: 80vw;
+  }
+}
+#main-nav-wrap .logo-wrap {
+  width: 60px;
+}
+@media (min-width: 1024px) {
+  #main-nav-wrap .logo-wrap {
+    width: 280px;
+  }
+}
+#main-nav-wrap .logo-wrap:hover {
+  opacity: 0.5;
+}
+#main-nav-wrap .mobile-phone {
+  margin-left: 25px;
+}
+@media (min-width: 1024px) {
+  #main-nav-wrap .mobile-phone {
+    display: none;
+  }
+}
+
+.responsive-nav.mobile-nav .nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 18vh 10vw 10% 10vw;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #9B3CE3;
+  z-index: 1000;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .responsive-nav.mobile-nav .nav {
+    padding: 0;
+    width: auto;
+    position: relative;
+    flex-direction: row;
+    height: auto;
+    background: inherit;
+    margin: 0.75em;
+  }
+}
+
+.responsive-nav.mobile-nav .nav a {
+  font-family: "Jolly Lodger", cursive;
+  font-weight: normal;
+  color: white;
+  font-size: 35px;
+  line-height: 120%;
+  margin: 40px 0;
+}
+@media (min-width: 1024px) {
+  .responsive-nav.mobile-nav .nav a {
+    font-size: 20px;
+    margin: 0.5em;
+    padding: 0.5em;
+    color: white;
+  }
+}
+.responsive-nav.mobile-nav .nav a:hover {
+  color: #213600;
+}
+.responsive-nav.mobile-nav .nav a:active {
+  color: #000139;
+}
+
+.nav {
+  position: fixed;
+  right: -100vw;
+  transition: all 0.3s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .nav {
+    width: auto;
+    position: relative;
+    margin: 0.75em;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background: inherit;
+    left: 0;
+    transition: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav a {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0.5em;
+    padding: 0.5em;
+    text-transform: capitalize;
+  }
+}
+.nav a:hover {
+  color: #9B3CE3;
+}
+.nav a:active {
+  color: #000139;
+}
+
+.nav-button {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .nav-button {
+    display: block;
+    box-sizing: border-box;
+    padding: 0.25em 0.75em;
+    background: none;
+    border: 3px solid #9B3CE3;
+    color: #9B3CE3;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-left: 0.5em;
+    
+    
+  }
+  .nav-button:hover {
+    font-weight: normal;
+    background: #9B3CE3;
+    color: white;
+  }
+  .nav-button:active {
+    color: #000139;
+  }
+}
+
+.hero {
+  height: 100vh;
+  text-align: center;
+  background-color: inherit;
+  align-items: center;
+}
+.hero h1 {
+  color: white;
+  font-size: clamp(55px, 6.5vw, 200px);
+  font-family: "Jolly Lodger", cursive;
+  line-height: 105%;
+  text-align: left;
+}
+@media (min-width: 1024px) {
+  .hero {
+    padding: 7vh 0 0 0;
+    text-align: left;
+  }
+}
+
+.pad-top {
+  padding-top: 22vh;
+}
+@media (min-width: 1024px) {
+  .pad-top {
+    padding: 20vh 0 0 0;
+  }
+}
+
+.hero-image {
+  padding: 0 0 0 5vw;
+}
+
+.subheading {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: clamp(22px, 1.7vw, 40px);
+}
+
+.arrow {
+  position: absolute;
+  width: 5em;
+  left: 43%;
+  bottom: 10vh;
+}
+
+.feature-article {
+  height: 50vh;
+  border-radius: 50px;
+  border: solid 3px;
+}
+
+.article {
+  height: 22.5vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-content img {
+  width: 100%;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 3vh 0;
+}
+.blog-content h2 {
+  padding: 5vh 0;
+}
+.blog-content p {
+  padding: 1em 0;
+}
+
+.card-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-container .card {
+  min-width: 25vw;
+}
+
+.cardOne {
+  background: inherit;
+}
+
+.cardTwo {
+  background: #1B202B;
+}
+
+.icon {
+  width: 75px;
+}
+
+.main-wrap {
+  padding: 0 3vw;
+  background-color: #020714;
+}
+@media (min-width: 1024px) {
+  .main-wrap {
+    padding: 0 5vw;
+  }
+}
+@media (min-width: 1280px) {
+  .main-wrap {
+    padding: 0 10vw;
+  }
+}
+
+.blog-wrap {
+  padding: 20vh 0vw;
+  background-color: #020714;
+}
+@media (min-width: 1024px) {
+  .blog-wrap {
+    padding: 20vh 2vw;
+  }
+}
+@media (min-width: 1280px) {
+  .blog-wrap {
+    padding: 20vh 3vw;
+  }
+}
+
+.button-container {
+  margin-top: 4em;
+  display: flex;
+}
+.button-container p {
+  color: white;
+  font-size: clamp(33px, 2vw, 50px);
+  font-family: "Jolly Lodger", cursive;
+}/*# sourceMappingURL=main.css.map */

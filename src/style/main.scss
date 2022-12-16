@@ -1,0 +1,284 @@
+@import "global/reset";
+@import "global/breakpoints";
+@import "global/colors";
+@import "global/typography";
+@import "global/flexbox";
+@import "global/utilities";
+@import "components/button";
+@import "components/navbar";
+@import "components/hero";
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary-color; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $hover-color; 
+  }
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:active {
+    background: $active-color; 
+  }
+
+
+.frame-content{
+    background: $background-color;
+    color: white;
+}
+.arrow{
+    position: absolute;
+    width: 5em;
+    left: 43%;
+    bottom: 10vh;
+}
+.blog-article{
+    border-radius: 25px;
+    border: solid 5px $primary-color;    
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+      
+    background-size: 150% 150%;;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all .4s ease-in-out;
+    &:hover{     
+    background-size: 200% 200%;
+     border-color: white !important;   
+    }
+    &:hover h1{
+       color: rgb(187, 178, 178);
+    }
+    &:hover p{
+        color: rgb(187, 178, 178);
+     }
+    
+
+    
+    
+}
+.cover{
+    width: 110%;
+    height: 110%;
+    background: black;
+    position: absolute;
+    left: -10%;
+    top: -10%;
+    border-radius: 25px;
+    background: linear-gradient(180deg, rgba(23, 23, 24, 0.3) 0%, #222024 100%);
+}
+.feature{
+    height: 60vh;
+    padding: 1em 1.5em;
+    @include breakpoint(md){ 
+        padding: 2em 3em;
+    }
+  
+   
+    h1{
+        font-size: 40px;
+        @include breakpoint(md){ 
+            font-size: 70px;
+        }
+
+    }
+    h2{
+        font-size: 50px;
+    }
+    .tag-flag{
+        padding: .2em 1em;
+        @include breakpoint(md){
+           
+            padding: .5em 2em;
+        }
+        span{
+            font-size: 18px;
+            @include breakpoint(md){
+                font-size: 22px;
+            }
+        }
+    }
+   
+}
+.nnn{
+    width: calc(100% - 1vh);
+    @include breakpoint(md){ 
+        width: calc(100% - 1vh);
+    }
+    @include breakpoint(lg){ 
+        width: calc(50% - 1vh);
+    }
+
+    
+    
+}
+.normal {
+    height: 29vh;
+    padding: 1em 1.5em;
+   
+   
+   p{
+    display: none;
+   }
+    h1{
+        font-size: 40px;
+    }
+    .tag-flag{
+        padding: .2em 1em; 
+    } 
+    span{
+        font-size: 18px;
+    }
+}
+.tag-flag{
+
+color: white;
+background: $primary-color;
+bottom: 0px;
+left: 0px;
+border-radius: 25px;
+max-width: 15em;
+align-self: flex-start;
+font-family: $secondary-font;
+margin-bottom: 1em;
+
+
+
+
+}
+.article{
+    height: 22.5vh;
+    
+}
+.column{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blog-content{
+
+    img{
+    width: 100%;
+    height:45vh;
+    object-fit: cover;
+    padding: 3vh 0;
+}
+h2{
+    padding: 5vh 0;
+}
+p{
+    padding: 1em 0;
+}
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.card-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    .card{
+        min-width: 25vw;
+        img{
+            width: 100%;
+           
+        }
+    
+    }
+}
+.cardOne{
+    background: inherit;
+}
+.cardTwo{
+    background: #1B202B;
+    text-align: center;
+    div{
+        text-align: center;
+    }
+    img {
+        height: 40px;
+        
+        
+    }
+}
+
+.icon{
+    width: 75px;
+}
+.tag-box{ 
+    padding: 1em;
+    font-size: 20px;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 20px;
+    &:hover{
+        background-color: $hover-color !important;
+    }
+    &:active{
+        background-color: $active-color !important;
+    }
+ 
+   
+    
+    color: white;
+    p{
+        font-size: 20px;
+    }
+}
+.main-wrap{
+    padding: 0 3vw;
+    background-color: $background-color;
+  
+    @include breakpoint(md){ 
+        padding: 0 5vw;
+    }
+    @include breakpoint(lg){ 
+        padding: 0 10vw;
+    }
+   
+   
+}
+.blog-wrap{
+    padding: 20vh 0vw;
+    background-color: $background-color;
+   
+  
+    @include breakpoint(md){ 
+        padding: 20vh 2vw;
+    }
+    @include breakpoint(lg){ 
+        padding: 20vh 3vw;
+    }
+   
+   
+}
+
+
+
+.button-container{
+    margin-top: 4em;
+    display: flex;
+    p{
+        color: white;
+        font-size: clamp(33px, 2vw, 50px);
+        font-family: $primary-font;
+    }
+}

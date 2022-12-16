@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Roboto&display=swap');
+
+  
+  $primary-font: 'Jolly Lodger', cursive;
+  $secondary-font: 'Roboto', sans-serif;
+ 
+
+  h1, h2, h3, h4, h5 {
+    font-family: $primary-font;
+   font-weight: normal;
+margin-bottom: .25em;
+    
+  }
+
+   li{
+    font-family:$primary-font;
+    font-size: 20px;
+    color: white;
+    @include breakpoint(md){       
+      font-size: 22px;         
+     } 
+     
+  }
+
+
+h1{
+  color: white;
+  font-size: clamp(45px, 5.5vw, 200px);
+  font-family: $primary-font;
+  line-height: 105%; 
+  
+
+   
+}
+
+
+
+ 
+
+  h2{
+    color: $text-color;    
+    font-size: 40px;
+    text-align: center;
+    @include breakpoint(md){       
+      font-size: 60px;
+             
+     } 
+  }
+  h3{
+    color: $text-color;    
+    font-size: 30px;
+    text-align: center;
+    @include breakpoint(md){       
+      font-size: 45px;
+             
+     } 
+  }
+  .secondary-font{
+    color: $secondary-color
+  }
+  
+
+  h4{
+    color: black;    
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    @include breakpoint(md){       
+      font-size: 40px;
+      margin-bottom:30px;
+              
+     } 
+  }
+
+  
+  h5{
+    color: $primary-color;    
+    font-size: 22px;
+    text-align: left;
+    @include breakpoint(md){       
+      font-size: 25px;
+           
+     } 
+  }
+
+  p{
+    font-size: 20px;
+    color: $text-color;
+    font-family: $secondary-font;
+  }
