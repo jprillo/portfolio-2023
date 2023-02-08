@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Vollkorn&display=swap');
   
-  $primary-font: 'Jolly Lodger', cursive;
-  $secondary-font: 'Roboto', sans-serif;
+  $primary-font: 'Poppins', sans-serif;
+  $secondary-font: 'Vollkorn', serif;
  
 
   h1, h2, h3, h4, h5 {
@@ -25,7 +24,7 @@ margin-bottom: .25em;
 
 h1{
   color: white;
-  font-size: clamp(45px, 5.5vw, 200px);
+  font-size: clamp(30px, 5.5vw, 90px);
   font-family: $primary-font;
   line-height: 105%; 
   
@@ -38,20 +37,22 @@ h1{
  
 
   h2{
-    color: $text-color;    
+    font-family: $primary-font;
+   font-weight: bold;   
     font-size: 40px;
-    text-align: center;
+  
     @include breakpoint(md){       
-      font-size: 60px;
+      font-size: 55px;
              
      } 
   }
   h3{
     color: $text-color;    
     font-size: 30px;
-    text-align: center;
+    font-weight: bold;
+    
     @include breakpoint(md){       
-      font-size: 45px;
+      font-size: 35px;
              
      } 
   }
@@ -75,10 +76,11 @@ h1{
   
   h5{
     color: $primary-color;    
-    font-size: 22px;
+    font-size: 18px;
     text-align: left;
+    font-family: $primary-font;
     @include breakpoint(md){       
-      font-size: 25px;
+      font-size: 20px;
            
      } 
   }

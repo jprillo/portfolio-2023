@@ -28,7 +28,7 @@ class Layout extends React.Component {
    
     
     return (
-      <div className="main-wrap">    
+      <div >    
         <header>  
                  
         <NavBar isActive={this.state.isActive} toggleNavbar={() => this.toggleNavbar()} />

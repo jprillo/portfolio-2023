@@ -25,7 +25,7 @@ export const BlogPostTemplate = ({
       {helmet || ""}
      
       
-            <div className="flex gap-5em">
+            <div className="flex gap-2">
                 <div className="col-9">
                 <h1 >
               {title}
@@ -72,7 +72,7 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-
+<div className="h-pad" style={{background: "yellow"}}>
     <Layout>
       <BlogPostTemplate
         content={post.html}
@@ -91,6 +91,7 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
       />
     </Layout>
+    </div>
   );
 };
 

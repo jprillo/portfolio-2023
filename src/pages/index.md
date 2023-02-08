@@ -1,14 +1,15 @@
 ---
 headingOne: "There is room on this manatee for both of us."
-subheadingOne: A free minimalist static blog with content management system.
-  Easy to set up and customize.
-heroButtonCtaOne: Get the code
-heroButtonCtaTwo: Learn More
+subheadingOne: Jason Prillo is a Web Developer and Graphic Artist from Melbourne Florida.
+heroButtonCtaOne: My Work 
+heroButtonCtaTwo: Let's Ride
 headingTwo: What can Geeby do for you?
 headingThree: Some Key Features
 headingFour: Find out what our customers think
-heroImage: /img/jason-on-manatee.png
+heroImage: /img/manatee.png
 heroButtonLinkOne: https://github.com
+heroButtonLinkTwo: /about/
+
 templateKey: index-page
 cards:
   - title: Speed

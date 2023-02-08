@@ -25,8 +25,10 @@ export default function Blog({data}) {
         <meta name="description" content="VYNTRADE was founded in 2018 to offer consulting to Wine & Spirit Industry Companies.​" />
         <meta name="theme-color" content="black" />
       </Helmet>
-      <Layout>
-<div className="flex gap-2 pad-top ">
+     
+<div className=" h-pad " style={{background: "blue"}}>
+<Layout>
+  <div className="flex v-pad gap-2">
     <div className="col-8">
       <BlogArticle
       width = ""
@@ -78,8 +80,10 @@ export default function Blog({data}) {
   
        
     </div>
+    </div>
+    </Layout>
 </div>
-  </Layout>
+ 
   </div>
 }
 

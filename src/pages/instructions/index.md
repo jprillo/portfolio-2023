@@ -1,5 +1,6 @@
 ---
 title: Instructions
+color: blue
 date: 2021-05-12
 templateKey: main-pages
 ---

@@ -1,4 +1,15 @@
 .button{   
+   color: #fff;
+   border-radius: 5px;
+   padding: 10px 25px;  
+   font-weight: bold;
+   background: transparent;
+   cursor: pointer;
+   transition: all 0.2s ease;
+   position: relative;
+   display: inline-block; 
+   outline: none;
+
     padding: .2em 1em;  
     @include breakpoint(md){
         padding: .75em 2em;  
@@ -6,27 +17,109 @@
     &.primary{
      background: $primary-color; 
      cursor: pointer;
-     &:hover{
-        background: $hover-color;
-     }
-     &:active{
-        background: $active-color;
-     }
+     z-index: 1;
+    
      p{
          color: white;
+         font-size: 18px;
+         font-weight: bold;
+         font-family: $primary-font;
+         @include breakpoint(sm){        
+            font-size: 30px;
+        }
+        @include breakpoint(md){        
+            font-size: 20px;
+        }
+        @include breakpoint(lg){        
+            font-size: 23px;
+        }
+        @include breakpoint(xlg){        
+            font-size: 26px;
+        }
      }    
     }
+
+
     &.secondary{
-     background: inherit; 
+     background-color: inherit; 
      cursor: pointer;
-     border: 1px solid $primary-color
+     z-index: 1;
+     border: 1px solid white;
+    
+
      p{
-         color: $primary-color;
-     }    
+         color: white;
+         font-size: 18px;
+         font-weight: bold;
+         font-family: $primary-font;
+         @include breakpoint(sm){        
+            font-size: 30px;
+        }
+        @include breakpoint(md){        
+            font-size: 20px;
+        }
+        @include breakpoint(lg){        
+            font-size: 23px;
+        }
+        @include breakpoint(xlg){        
+            font-size: 26px;
+        } 
+     }  
+     
+     &.nav-button{
+      display: flex;
+      align-items: center;
+      p{
+         color: white;
+         font-size: 18px;
+         
+         font-family: $secondary-color;
+         @include breakpoint(md){       
+            font-size: 20px;
+                   
+           } 
+     } 
+     }  
     }   
     @include breakpoint(md){
-     padding: .75em 3em;
+     padding: .5em 2em;
     }
-   
+
   
+   }
+
+
+
+.button:active{
+   top: 2px;
+}
+
+.btn-icon-contain {
+   transition: 0.70s;
+   width: 20px;   
+   @include breakpoint(sm){        
+      width: 30px;
+  }
+  @include breakpoint(md){        
+   width: 30px;
+  }
+  @include breakpoint(lg){        
+   width: 35px;
+  }
+  @include breakpoint(xlg){        
+   width: 35px;
+  }
+
+}
+.nav-button .btn-icon-contain{
+width: 25px;
+padding-top: 3px;
+}
+.button:hover .btn-icon-contain{
+   transition: 0.70s;  
+   transform: rotate(360deg);
  }
+ .button:hover{
+  background: $hover-color;
+ }
+

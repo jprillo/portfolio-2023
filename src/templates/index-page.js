@@ -1,18 +1,21 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
+import cloudtop from '../images/cloudbottom.png'
+import ground from '../images/background-ground.png'
 
-import Layout from '../components/layout2'
+import FeaturedWebsite from '../components/featured-website'
+import Website from '../components/website'
+
 import Hero from '../components/hero'
+import projects from '../images/projects.png'
 import CardOne from '../components/cardOne'
-import CardTwo from '../components/cardTwo'
-import Review from '../components/review'
-
-
-
-
-import stars from '../images/stars.png'
-import avatar from '../images/Avatar.png'
+import Button from '../components/button'
+import arrow from '../images/arrow.png'
+import hills from '../images/hills.png'
+import geeby from '../images/geeby.png'
+import vyn from '../images/Vyntrade.png'
+import video from '../images/intro-video.mp4'
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({   
@@ -20,14 +23,10 @@ export const IndexPageTemplate = ({
   subheadingOne,
   heroButtonCtaOne,
   heroButtonCtaTwo, 
-  heroButtonLinkOne, 
+  heroButtonLinkOne,
+  heroButtonLinkTwo,
   image,
-  headingTwo, 
-  headingThree,
-  headingFour,
-  cards,
-  dependancies, 
-  reviews,
+
   helmet
 
 }) => {
@@ -44,65 +43,87 @@ export const IndexPageTemplate = ({
           heroImage={image}
           heroButtonCtaTwo={heroButtonCtaTwo}
           heroButtonLinkOne={heroButtonLinkOne}
+          heroButtonLinkTwo={heroButtonLinkTwo}
+          
         />
-        <section className="vertical-padding align-center" >
-
-          <div>
-            <h2>{headingTwo}</h2>
-          
-            <div className="flex center gap-1em">
-
-              {cards.map((item) => (
-
-                <CardOne
-                  title={item.title}
-                  desc={item.desc}
-                  icon={item.icon.childImageSharp.gatsbyImageData}
-                  alt={item.alt}
-                  type="cardOne"
-                />
-
-              ))}
+<section className="flex cloud v-pad h-pad gap-1" style={{width: "100%",  overflowY: "hidden", background: "white"}}>
+          <div className="col-6 v-pad" >
+          <video controls width="100%" style={{ border: "solid black 5px"}}>
+      
+      <source src={video} type="video/mp4" 
+      />
+      Sorry, your browser doesn't support videos.
+    </video>
+          </div>
+          <div className="col-6 v-pad"  >
+          <h2 style={{color: "black", padding: 0, marginTop: 0}}>Meet Mr. Prillo</h2>
+              <p style={{color: "black"}}>
+              Hello there, my name is Jason Prillo. I am a web developer and digtal artist based in Central Florida. I started Formal Flamingo Web Design in 2016 and specialize in making unique websites. 
+I also like to come up with terrible business ideas and make them real because I think it is funny. Enjoy.
+              </p>
             </div>
-          </div>
+
         </section>
+<div style={{background: "#0000ff"}}>
+<img style={{verticalAlign: "top"}} width= "100%" src={cloudtop} alt="this is a hero image" />
+</div>
+    <div className="v-pad h-pad" style={{background: "linear-gradient(180deg, #0000FF 5.62%, #3744EA 68.68%, #487FE9 96.84%)"}}>
+    <img width= "100%" src={projects} alt="this is a hero" />
+    <div >
+      <div className="v-pad gap-1" style={{display: "flex", flexDirection: "column" }}>
+      <FeaturedWebsite
+      title="Geeby"
+      description="geeby is"
+      image={geeby}
+      />
+    <FeaturedWebsite
+     title="VynTrade"
+     description="Vyntrade is"
+     image={vyn}
+    />
+   
+    <div style={{textAlign: 'center', width: "100%", display: "flex", justifyContent: "center", marginTop: "-2px"}}>
+      
+      <Button cta="See Them All" link="/instructions" type="primary" icon={arrow}  />
+      </div>
 
-        <div className="vertical-padding">
-          <h2>{headingThree}</h2>
-          <div className="flex center card-container gap-1em">
-            {dependancies.map((item) => (
+      </div>
 
-              <CardTwo
-                title={item.title}
-                desc={item.desc}
-                icon={item.icon.childImageSharp.gatsbyImageData}
-                alt= {item.alt}
-                type="cardTwo"
-              />
 
-            ))}
-          </div>
-        </div>
+ 
 
-        <section className="vertical-padding">
-          <h2>{headingFour}</h2>
-          <div className="alt-background center h-pad-10" style={{overflow: "hidden"}}>
-            <div className="flex ">
-            {reviews.map((item) => (
+  
+    </div> 
+    </div>
+    <div style={{background: "#0000ff"}}>
+<img style={{verticalAlign: "top"}} width= "100%" src={hills} alt="this is a hero image" />
+</div>
+    <div className="h-pad gap-2" style={{display: "flex", flexDirection: "column", background: "#2f9733"}}>
+    <div  style={{  display: "flex",  gap: "3vw"}}>
+<CardOne title="Beatrice Boner"  />
+<CardOne title="title"  />
+<CardOne title="title"  />
+<CardOne title="title" />
+</div>
+<div  style={{ display: "flex" ,  gap: "3vw"}}>
+<CardOne title="title"  />
+<CardOne title="title"  />
+<CardOne title="title"  />
+<CardOne title="title"  />
+</div>
 
-<Review
-  name={item.name}
-  desc={item.desc}
-  stars={stars}
-  avatar={avatar}
-/>
+<Button cta="Let's Go" link="google.com" type="primary" icon={arrow} />
+</div>
 
-))}
-          
-          
-            </div>
-          </div>
-        </section>
+<div style={{background: "#181302", height: "50vh"}}>
+
+</div>
+    
+      
+
+
+
+    
 
 
    
@@ -119,13 +140,14 @@ const IndexPage = ({ data }) => {
  
   return (
 
-    <Layout>
+   
       <IndexPageTemplate
           headingOne = {h.headingOne}
           subheadingOne = {h.subheadingOne}
           heroButtonCtaOne = {h.heroButtonCtaOne}
           heroButtonCtaTwo = {h.heroButtonCtaTwo}
           heroButtonLinkOne = {h.heroButtonLinkOne}
+          heroButtonLinkTwo = {h.heroButtonLinkTwo}
           image = {h.heroImage.publicURL}
           headingTwo = {h.headingTwo} 
           headingThree = {h.headingThree}
@@ -144,7 +166,7 @@ const IndexPage = ({ data }) => {
           }
 
       />
-    </Layout>
+
   )
 }
 
@@ -167,6 +189,7 @@ export const query = graphql`
         heroButtonCtaOne
         heroButtonCtaTwo
         heroButtonLinkOne
+        heroButtonLinkTwo
         heroImage {
           publicURL
         }

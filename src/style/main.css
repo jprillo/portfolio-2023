@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,7 +46,7 @@ ul {
 }
 
 .primary-back {
-  background: #9B3CE3;
+  background: red;
 }
 
 .secondary-color {
@@ -54,18 +54,18 @@ ul {
 }
 
 .primary-color {
-  color: #9B3CE3;
+  color: red;
 }
 
 /* Nav Colors */
 h1, h2, h3, h4, h5 {
-  font-family: "Jolly Lodger", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   margin-bottom: 0.25em;
 }
 
 li {
-  font-family: "Jolly Lodger", cursive;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: white;
 }
@@ -77,14 +77,14 @@ li {
 
 h1 {
   color: white;
-  font-size: clamp(45px, 5.5vw, 200px);
-  font-family: "Jolly Lodger", cursive;
+  font-size: clamp(30px, 5.5vw, 90px);
+  font-family: "Poppins", sans-serif;
   line-height: 105%;
 }
 
 h2 {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -122,20 +122,20 @@ h4 {
 }
 
 h5 {
-  color: #9B3CE3;
-  font-size: 22px;
-  text-align: left;
+  color: black;
+  font-size: 16px;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   h5 {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 
 p {
   font-size: 20px;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .flex {
@@ -265,7 +265,7 @@ p {
 }
 
 .gap-2 {
-  gap: 35px;
+  gap: 2vh;
 }
 
 .gap-3em {
@@ -334,20 +334,34 @@ p {
 }
 
 .button {
-  padding: 0.75em 2em;
+  padding: 0.2em 1em;
+}
+@media (min-width: 1024px) {
+  .button {
+    padding: 0.75em 2em;
+  }
 }
 .button.primary {
-  background: #9B3CE3;
+  background: red;
   cursor: pointer;
+}
+.button.primary:hover {
+  background: #ac0555;
+}
+.button.primary:active {
+  background: rgb(255, 196, 0);
 }
 .button.primary p {
   color: white;
+  font-size: 30px;
 }
 .button.secondary {
   background: inherit;
   cursor: pointer;
-  border: 1px solid #9B3CE3 p;
-  border-color: #9B3CE3;
+  border: 1px solid white;
+}
+.button.secondary p {
+  color: white;
 }
 @media (min-width: 1024px) {
   .button {
@@ -379,7 +393,7 @@ p {
   position: absolute;
   height: 10%;
   width: 70%;
-  background: #9B3CE3;
+  background: red;
   box-shadow: 0.5px 0.5px black;
   border-radius: 10px;
   transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
@@ -419,7 +433,7 @@ p {
   right: 25px;
 } /*Hack for keeping hamburger in place  */
 #active {
-  color: #000139;
+  color: rgb(255, 196, 0);
 }
 
 #main-nav-wrap {
@@ -429,17 +443,17 @@ p {
   align-items: center;
   transition: background 0.5s;
   position: absolute;
-  width: 94vw;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   #main-nav-wrap {
-    width: 90vw;
+    padding: 10px 7vw 0;
     transition: background 0s;
   }
 }
 @media (min-width: 1280px) {
   #main-nav-wrap {
-    width: 80vw;
+    padding: 10px 7vw 0;
   }
 }
 #main-nav-wrap .logo-wrap {
@@ -447,7 +461,7 @@ p {
 }
 @media (min-width: 1024px) {
   #main-nav-wrap .logo-wrap {
-    width: 280px;
+    width: 80px;
   }
 }
 #main-nav-wrap .logo-wrap:hover {
@@ -471,7 +485,7 @@ p {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: #9B3CE3;
+  background: red;
   z-index: 1000;
   text-align: center;
 }
@@ -488,7 +502,7 @@ p {
 }
 
 .responsive-nav.mobile-nav .nav a {
-  font-family: "Jolly Lodger", cursive;
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   color: white;
   font-size: 35px;
@@ -504,10 +518,10 @@ p {
   }
 }
 .responsive-nav.mobile-nav .nav a:hover {
-  color: #213600;
+  color: #ac0555;
 }
 .responsive-nav.mobile-nav .nav a:active {
-  color: #000139;
+  color: rgb(255, 196, 0);
 }
 
 .nav {
@@ -531,7 +545,7 @@ p {
 
 @media (min-width: 1024px) {
   .nav a {
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: white;
     font-size: 20px;
     line-height: 120%;
@@ -541,10 +555,14 @@ p {
   }
 }
 .nav a:hover {
-  color: #9B3CE3;
+  color: #ac0555;
 }
 .nav a:active {
-  color: #000139;
+  color: rgb(255, 196, 0);
+}
+
+.active {
+  color: rgb(255, 196, 0) !important;
 }
 
 .nav-button {
@@ -556,50 +574,56 @@ p {
     box-sizing: border-box;
     padding: 0.25em 0.75em;
     background: none;
-    border: 3px solid #9B3CE3;
-    color: #9B3CE3;
-    font-family: "Roboto", sans-serif;
+    border: 3px solid red;
+    color: red;
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     margin-left: 0.5em;
-    
-    
+    cursor: pointer;
   }
   .nav-button:hover {
     font-weight: normal;
-    background: #9B3CE3;
+    background: #ac0555;
+    border-color: #ac0555;
     color: white;
   }
   .nav-button:active {
-    color: #000139;
+    color: rgb(255, 196, 0);
   }
 }
 
 .hero {
-  height: 100vh;
+  height: 110vh;
   text-align: center;
   background-color: inherit;
+ 
   align-items: center;
 }
 .hero h1 {
   color: white;
-  font-size: clamp(55px, 6.5vw, 200px);
-  font-family: "Jolly Lodger", cursive;
-  line-height: 105%;
-  text-align: left;
+  font-size: clamp(35px, 3.5vw, 70px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .hero h1 {
+    text-align: left;
+  }
 }
 @media (min-width: 1024px) {
   .hero {
-    padding: 7vh 0 0 0;
+    padding: 0 7vw;
     text-align: left;
   }
 }
 
 .pad-top {
-  padding-top: 22vh;
+  padding-top: 15vh;
 }
 @media (min-width: 1024px) {
   .pad-top {
-    padding: 20vh 0 0 0;
+    padding: 22vh 0 0 0;
   }
 }
 
@@ -608,9 +632,41 @@ p {
 }
 
 .subheading {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
-  font-size: clamp(22px, 1.7vw, 40px);
+  font-size: 30px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ac0555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:active {
+  background: rgb(255, 196, 0);
+}
+
+.frame-content {
+  background: #020714;
+  color: white;
 }
 
 .arrow {
@@ -620,10 +676,120 @@ p {
   bottom: 10vh;
 }
 
-.feature-article {
-  height: 50vh;
-  border-radius: 50px;
-  border: solid 3px;
+.blog-article {
+  border-radius: 25px;
+  border: solid 5px red;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: 150% 150%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+.blog-article:hover {
+  background-size: 200% 200%;
+  border-color: white !important;
+}
+.blog-article:hover h1 {
+  color: rgb(187, 178, 178);
+}
+.blog-article:hover p {
+  color: rgb(187, 178, 178);
+}
+
+.cover {
+  width: 110%;
+  height: 110%;
+  background: black;
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  border-radius: 25px;
+  background: linear-gradient(180deg, rgba(23, 23, 24, 0.3) 0%, #222024 100%);
+}
+
+.feature {
+  height: 60vh;
+  padding: 1em 1.5em;
+}
+@media (min-width: 1024px) {
+  .feature {
+    padding: 2em 3em;
+  }
+}
+.feature h1 {
+  font-size: 40px;
+}
+@media (min-width: 1024px) {
+  .feature h1 {
+    font-size: 70px;
+  }
+}
+.feature h2 {
+  font-size: 50px;
+}
+.feature .tag-flag {
+  padding: 0.2em 1em;
+}
+@media (min-width: 1024px) {
+  .feature .tag-flag {
+    padding: 0.5em 2em;
+  }
+}
+.feature .tag-flag span {
+  font-size: 18px;
+}
+@media (min-width: 1024px) {
+  .feature .tag-flag span {
+    font-size: 22px;
+  }
+}
+
+.nnn {
+  width: calc(100% - 1vh);
+}
+@media (min-width: 1024px) {
+  .nnn {
+    width: calc(100% - 1vh);
+  }
+}
+@media (min-width: 1280px) {
+  .nnn {
+    width: calc(50% - 1vh);
+  }
+}
+
+.normal {
+  height: 29vh;
+  padding: 1em 1.5em;
+}
+.normal p {
+  display: none;
+}
+.normal h1 {
+  font-size: 40px;
+}
+.normal .tag-flag {
+  padding: 0.2em 1em;
+}
+.normal span {
+  font-size: 18px;
+}
+
+.tag-flag {
+  color: white;
+  background: red;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 25px;
+  max-width: 15em;
+  align-self: flex-start;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1em;
 }
 
 .article {
@@ -649,12 +815,19 @@ p {
   padding: 1em 0;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .card-container {
   flex-wrap: wrap;
   justify-content: center;
 }
 .card-container .card {
   min-width: 25vw;
+}
+.card-container .card img {
+  width: 100%;
 }
 
 .cardOne {
@@ -663,10 +836,36 @@ p {
 
 .cardTwo {
   background: #1B202B;
+  text-align: center;
+}
+.cardTwo div {
+  text-align: center;
+}
+.cardTwo img {
+  height: 40px;
 }
 
 .icon {
   width: 75px;
+}
+
+.tag-box {
+  padding: 1em;
+  font-size: 20px;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin: 20px;
+  color: white;
+}
+.tag-box:hover {
+  background-color: #ac0555 !important;
+}
+.tag-box:active {
+  background-color: rgb(255, 196, 0) !important;
+}
+.tag-box p {
+  font-size: 20px;
 }
 
 .main-wrap {
@@ -705,6 +904,6 @@ p {
 }
 .button-container p {
   color: white;
-  font-size: clamp(33px, 2vw, 50px);
-  font-family: "Jolly Lodger", cursive;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
 }/*# sourceMappingURL=main.css.map */

@@ -8,12 +8,11 @@ import "../style/main.scss"
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
   return (
-    
-      <div>
+    <div className="h-pad" style={{background: post.frontmatter.color}} >
         <Layout>
         <Helmet title={post.frontmatter.title} defer={false} />
-        <div className="pad-top" >
-          <div className="flex">
+ 
+          <div className="flex pad-top">
         <div className="page-container col-9" >
         <h1 className="center" >{post.frontmatter.title}</h1>
    
@@ -23,7 +22,7 @@ export default function BlogPost({ data }) {
 test
        </div>
        </div>
-       </div>
+      
         </Layout>
       </div>
   
@@ -36,6 +35,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        color
    
       }
     }

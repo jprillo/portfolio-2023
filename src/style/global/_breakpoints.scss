@@ -1,23 +1,23 @@
 
 @mixin breakpoint($class) {
     @if $class == xs {
-      @media (max-width: 640px) { @content; }
+      @media (max-width: 576px) { @content; }
     }
    
     @else if $class == sm {
-      @media (min-width: 768px) { @content; }
+      @media (min-width: 576px) { @content; }
     }
    
     @else if $class == md {
-      @media (min-width: 1024px) { @content; }
+      @media (min-width: 992px) { @content; }
     }
    
     @else if $class == lg {
-      @media (min-width: 1280px) { @content; }
+      @media (min-width: 1275px) { @content; }
     }
 
     @else if $class == xlg {
-      @media (min-width: 1536px) { @content; }
+      @media (min-width: 1500px) { @content; }
     }
    
     @else {

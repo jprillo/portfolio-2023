@@ -62,28 +62,30 @@ color: $active-color;
 
 
 #main-nav-wrap{
+  
 display: flex;
 justify-content: space-between;
-
+height: 70px;
   background-color: inherit;     
-  align-items: center; 
+ 
   transition: background .5s; 
-  position: absolute;
-  width: 94vw;
-  
+  position: relative;
+  width: 100%;
+ 
   @include breakpoint(md){
-   width: 90vw;
+    padding: 10px 0 0;
     transition: background 0s; 
   }
   @include breakpoint(lg){ 
-   width: 80vw;
+    padding: 10px 0 0;
 }
 
 
 .logo-wrap {
-  width: 60px;
+  width: 80px;
+
   @include breakpoint(md){
-   width: 80px;
+   width: 100px;
  
   }
 
@@ -110,7 +112,7 @@ margin-left: 25px;
   display: flex;
   flex-direction: column;
   height: 100vh;  
-  background: $primary-color;
+  background: black;
   z-index: 1000;
   text-align: center;
   @include breakpoint(md){
@@ -189,11 +191,21 @@ margin-left: 25px;
 .active{
   color: $active-color !important;
 }
+.nav-button-container{
+  display: flex;
+  justify-content: center;
+  @include breakpoint(md){
+    display: block;
+  }
+
+}
 .nav-button {
     display: none;
-
+margin-top: 20px;
     @include breakpoint(md){
+      margin-top: -27px;
       display: block;
+      
       box-sizing:border-box;
       padding: .25em .75em;
     background: none;

@@ -41,6 +41,7 @@ collections:
       - { label: 'HeadingFour', name: 'headingFour', widget: 'string' }
       - { label: 'HeroImage', name: heroImage, widget: image }
       - { label: 'HeroButtonLinkOne', name: 'heroButtonLinkOne', widget: 'string' }
+      - { label: 'HeroButtonLinkTwo', name: 'heroButtonLinkTwo', widget: 'string' }
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "main-pages"}
       - {
           label: Cards,

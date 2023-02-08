@@ -2,6 +2,9 @@
   import React from "react"
   import {Link} from "gatsby"
   import logo from '../images/logo.png'
+  import Button from '../components/button'
+  import mail from '../images/letter.png'
+
 
   
 
@@ -10,8 +13,8 @@
       return(
           <section className={` navagation-wrap col-12 ${isActive ? 'mobile-wrap' : ''}`}> 
   
-              <div id="main-nav-wrap">
-                  <div className="logo-wrap">
+              <div id="main-nav-wrap" >
+                  <div className="logo-wrap" >
                       <Link to="/">
                     <img width="100%" src= {logo} alt="Vyntrade logo" /> </Link>
   
@@ -20,21 +23,22 @@
                   <div >
                       <div  className={` responsive-nav ${isActive ? 'mobile-nav' : ''}`}>
                           <ul className="nav">
-                                     <li><Link  active= "active" to="/">Home</Link></li>
+                                     <li><Link  activeClassName="active" active= "active" to="/">Home</Link></li>
                               
                               <li><Link to="/instructions/" activeClassName="active" >Instructions</Link></li>
                               <li><Link to="/about/" activeClassName="active" >About</Link></li>                              
                               <li><Link to="/blog/" activeClassName="active" >Blog</Link></li>
-                              <li><Link to="/contact/" activeClassName="active" >Contact</Link></li>
-                           <div style={{marginTop: "-1.75em"}}>
-                           <a  href= "https://www.github.com">
-    <button className="nav-button">
-    <p>Get the code</p>
-    </button>
-   
+                            
+                           <div className="nav-button-container">
+                          
+                           <Button
+                    type="secondary nav-button"
+                    cta= "Contact"
+                    link= "/contact/"
+                 icon= {mail}
+                   
+                    />
     
- 
-   </a>
                               </div>
                        
   
