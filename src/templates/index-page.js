@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
 import cloudtop from '../images/cloudbottom.png'
 import ground from '../images/background-ground.png'
-
+import "../style/main.scss"
 import FeaturedWebsite from '../components/featured-website'
 import Website from '../components/website'
 
