@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from './button.js'
 import NavBar from "./navbar" 
 
-import background from '../images/BACKGROUND2.png'
+import background from '../images/background2.png'
 import cloudtop from '../images/cloud-top.png'
 import arrow from '../images/arrow.png'
 import letter from '../images/letter.png'
