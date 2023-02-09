@@ -50,7 +50,18 @@
     
 
 /**************************************END HAMBURGER*******************************/
+.logo-wrap {
+  width: 80px;
 
+  @include breakpoint(md){
+   width: 100px;
+ 
+  }
+
+  &:hover{
+    opacity: .5;
+  }
+}
 .navagation-wrap.mobile-wrap #hamburger-wrap{
 position: fixed;
 z-index: 100000;
@@ -81,18 +92,7 @@ height: 70px;
 }
 
 
-.logo-wrap {
-  width: 80px;
 
-  @include breakpoint(md){
-   width: 100px;
- 
-  }
-
-  &:hover{
-    opacity: .5;
-  }
-}
 .mobile-phone{
 margin-left: 25px;
 @include breakpoint(md){
