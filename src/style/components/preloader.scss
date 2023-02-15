@@ -1,18 +1,36 @@
 @keyframes ldio-zuexwzan24 {
-    0%, 100% {
-      animation-timing-function: cubic-bezier(0.45,0,0.9,0.55)
-    }
-    0% {
-      transform: translate(0,0)
-    }
-    50% {
-      transform: translate(0,108px);
-      animation-timing-function: cubic-bezier(0,0.45,0.55,0.9);
-    }
-    100% {
-      transform: translate(0,0);
-    }
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.45,0,0.9,0.55)
   }
+  0% {
+    transform: translate(0,0)
+  }
+  50% {
+    transform: translate(0,108px);
+    animation-timing-function: cubic-bezier(0,0.45,0.55,0.9);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+@keyframes rolling {
+  0% {
+    background: linear-gradient(180deg, #DD17E1 4.69%, #00F0FF 29.69%, #00FF47 47.42%, #DBFF00 64.58%, #FF9900 79.81%, #FF0000 100%);
+  }
+  25% {
+    background: linear-gradient(180deg,  #00F0FF 29.69%, #00FF47 47.42%, #DBFF00 64.58%, #FF9900 79.81%, #FF0000 100%, #DD17E1 4.69%,);
+  }
+  50% {
+    background: linear-gradient(180deg,  #00FF47 47.42%, #DBFF00 64.58%, #FF9900 79.81%, #FF0000 100%, #DD17E1 4.69%, #00F0FF 29.69%,);
+  }
+  75% {
+    background: linear-gradient(180deg, #DBFF00 64.58%, #FF9900 79.81%, #FF0000 100%,  #DD17E1 4.69%, #00F0FF 29.69%, #00FF47 47.42%,);
+}
+100% {
+  background: linear-gradient(180deg,  #FF9900 79.81%, #FF0000 100%,  #DD17E1 4.69%, #00F0FF 29.69%, #00FF47 47.42%, #DBFF00 64.58%,);
+}
+}
   
   .ldio-zuexwzan24 div {
     position: absolute;
@@ -24,7 +42,7 @@
     background: linear-gradient(180deg, #DD17E1 4.69%, #00F0FF 29.69%, #00FF47 47.42%, #DBFF00 64.58%, #FF9900 79.81%, #FF0000 100%);;
    
   
-    animation: ldio-zuexwzan24 1s linear infinite;
+    animation: ldio-zuexwzan24 1s linear infinite, rolling 3s linear;
   }
 
   .ldio-zuexwzan24 div { box-sizing: content-box; }
@@ -33,4 +51,5 @@
 
   .preloader{
     transition: all 01s ease-in;
+  
   }
