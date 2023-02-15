@@ -35,7 +35,7 @@
                     type="secondary nav-button"
                     cta= "Contact"
                     link= "/contact/"
-                 icon= {mail}
+                 icon= ""
                    
                     />
     

@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout2.js'
+import image from '../images/logo.png'
 
 import "../style/main.scss"
 
@@ -12,14 +13,21 @@ export default function BlogPost({ data }) {
         <Layout>
         <Helmet title={post.frontmatter.title} defer={false} />
  
-          <div className="flex pad-top">
-        <div className="page-container col-9" >
-        <h1 className="center" >{post.frontmatter.title}</h1>
-   
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div className="flex gap-2 hero">
+        <div className="page-container col-6" >
+        <h1  >{post.frontmatter.title}</h1>
+        <p className="subheading">This is a good subheading about myself</p>
+   </div>
+   <div className="col-6">
+   <img width= "100%" src={image} alt="this is a hero" />
+        </div>
        </div>
-       <div className="col-3">
-test
+       <div className="flex">
+       <div className="col-6">
+       <div dangerouslySetInnerHTML={{ __html: post.html }} />
+       </div>
+       <div className="col-6">
+       <div dangerouslySetInnerHTML={{ __html: post.html }} />
        </div>
        </div>
       

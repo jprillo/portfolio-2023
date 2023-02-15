@@ -39,12 +39,19 @@ h1{
   h2{
     font-family: $primary-font;
    font-weight: bold;   
+   font-size: 30px;
+   @include breakpoint(sm){        
     font-size: 40px;
-  
-    @include breakpoint(md){       
-      font-size: 55px;
-             
-     } 
+}
+@include breakpoint(md){        
+    font-size: 35px;
+}
+@include breakpoint(lg){        
+    font-size: 40px;
+}
+@include breakpoint(xlg){        
+    font-size: 45px;
+}
   }
   h3{
     color: $text-color;    

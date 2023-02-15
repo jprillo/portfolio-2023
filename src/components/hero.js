@@ -50,13 +50,13 @@ export default function Hero(props) {
             </div>
         </div>
         <div className="col-6 right hero-image" >
-        <img width= "100%" src={props.heroImage} alt="this is a hero image" />
+        <img width= "100%" src={props.heroImage} alt="man riding a manatee" />
    
         </div> 
       </section>
      
       </div>
-      <img style={{verticalAlign: "bottom"}} width= "100%" src={cloudtop} alt="this is a hero image" />
+      <img style={{verticalAlign: "bottom"}} width= "100%" src={cloudtop} alt="cloud top" />
       </div>
     )
 }

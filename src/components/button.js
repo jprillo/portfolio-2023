@@ -8,9 +8,14 @@ export default function Button(props) {
   <a  href= {props.link}>
     <button className={"button " + type} style={{display: "flex", alignItems: "center"}}>
     <p style={{paddingRight: ".5em", width: "100%"}}>{props.cta}</p>  
-      <div className='btn-icon-contain'>        
-        <img width= "100%" src={props.icon}alt="this is a hero" />
-        </div>
+
+      {
+      props.icon
+      ? <div className='btn-icon-contain'>        
+              <img width= "100%" src={props.icon}alt="this is a hero" />
+              </div>
+      : null
+      }
     </button>
    
     

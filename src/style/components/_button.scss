@@ -9,16 +9,13 @@
    position: relative;
    display: inline-block; 
    outline: none;
-
-    padding: .2em 1em;  
+   padding: .2em 1em;  
     @include breakpoint(md){
         padding: .75em 2em;  
     }
     &.primary{
-     background: $primary-color; 
-     cursor: pointer;
-     z-index: 1;
-    
+     background: $primary-color;     
+     z-index: 1;         
      p{
          color: white;
          font-size: 18px;
@@ -37,6 +34,26 @@
             font-size: 26px;
         }
      }    
+     &.sm{
+        p{
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: $primary-font;
+            @include breakpoint(sm){        
+               font-size: 25px;
+           }
+           @include breakpoint(md){        
+               font-size: 20px;
+           }
+           @include breakpoint(lg){        
+               font-size: 22px;
+           }
+           @include breakpoint(xlg){        
+               font-size: 22px;
+           }
+        }   
+     }
     }
 
 
@@ -45,7 +62,27 @@
      cursor: pointer;
      z-index: 1;
      border: 1px solid white;
-    
+     &.sm{
+        border-color: black;
+        p{
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: $primary-font;
+            @include breakpoint(sm){        
+               font-size: 25px;
+           }
+           @include breakpoint(md){        
+               font-size: 20px;
+           }
+           @include breakpoint(lg){        
+               font-size: 22px;
+           }
+           @include breakpoint(xlg){        
+               font-size: 22px;
+           }
+        }   
+     }
 
      p{
          color: white;
@@ -64,6 +101,7 @@
         @include breakpoint(xlg){        
             font-size: 26px;
         } 
+        
      }  
      
      &.nav-button{
@@ -79,7 +117,9 @@
                    
            } 
      } 
-     }  
+     } 
+     
+    
     }   
     @include breakpoint(md){
      padding: .5em 2em;
