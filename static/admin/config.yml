@@ -86,11 +86,4 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "main-pages"}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'instructions'
-    label: 'Instructions'
-    folder: 'src/pages/instructions'
-    create: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "main-pages"}
-      - { label: 'Body', name: 'body', widget: 'markdown' } 
+ 

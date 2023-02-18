@@ -14,10 +14,11 @@ export default function FeaturedWebsite(props) {
   
   
   </div>
-  <div className="col-6" style={{padding: "2vw", display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
+  <div className="col-6" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
     <div>
     <h3>{props.title}</h3>
-    <p>{props.description}</p>
+    <p>{props.description1}</p><br/>
+    <p>{props.description2}</p>
     </div>
    
     <div style={{display: "flex", justifyContent: "space-between"}}>

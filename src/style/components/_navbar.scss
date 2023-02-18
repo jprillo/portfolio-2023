@@ -51,7 +51,7 @@
 
 /**************************************END HAMBURGER*******************************/
 .logo-wrap {
-  width: 80px;
+  width: 50px;
 
   @include breakpoint(md){
    width: 100px;
@@ -68,7 +68,7 @@ z-index: 100000;
 right: 25px;
 } /*Hack for keeping hamburger in place  */
 #active{
-color: $active-color;
+color: $secondary-color;
 }
 
 
@@ -184,7 +184,7 @@ margin-left: 25px;
    
   }
   &:active {
-    color: $active-color;
+    color: $primary-color;
   }
 
 }

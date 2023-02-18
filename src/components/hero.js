@@ -27,7 +27,7 @@ export default function Hero(props) {
           <h1>{props.headingOne}</h1>      
           <p className="subheading">{props.subheadingOne}</p> 
             <div className="button-container">
-                <div className="col-5">        
+                <div className="col-6">        
                     <Button
                     type="secondary"
                     cta={props.heroButtonCtaOne}

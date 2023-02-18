@@ -1,34 +1,40 @@
 ---
 templateKey: blog-post
-title: Mfake title
+title: 7 Promising NFTs to Keep an Eye On in 2023
 date: 2016-12-17T15:04:10.000Z
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
 featuredImage: /img/win_20190324_12_08_00_pro.jpg
 featuredimage: /img/3.png
+color1: red
 tags:
   - Culture
   - tasting
 ---
 ![flavor wheel](/img/3.png "bb")
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+Non-fungible tokens (NFTs) have become a popular trend in the cryptocurrency world since their emergence in 2017. Over the past four years, the market for NFTs has grown exponentially with more projects emerging every year. It is expected that the NFT market will continue to grow and evolve over the next few years. Here are 10 of the most promising NFTs to watch out for in 2023.
 
-## What the updates mean to you
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
+Decentraland (MANA): Decentraland is a virtual reality platform powered by the Ethereum blockchain. It allows users to create, explore, and monetize their own in-game content. The platform has its own cryptocurrency called MANA, which is used for trading virtual land, goods, and services.
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+CryptoKitties (CK): CryptoKitties is a blockchain-based game in which users can buy, sell, and trade digital cats. CryptoKitties was the first game to popularize the NFT market and remain one of the most popular projects in the space today.
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+
+Hashmasks (HM): Hashmasks are digital collectible masks powered by the Ethereum blockchain. Each mask is unique and immutable, making it a perfect NFT to collect and trade.
+
+
+NBA Top Shots (NBAT): NBA Top Shots is a blockchain-based platform where users can buy, sell, and trade NBA highlight clips. The platform has gained massive popularity since its launch in 2019 and is expected to continue to grow over the next few years.
+
+
+ENSdomains (ENS): ENSdomains are digital domains powered by the Ethereum blockchain. They are used to create a unique and immutable domain name that can be used to host websites and other digital content.
+
+
+Axie Infinity (AXS): Axie Infinity is a blockchain-based game in which users can buy, sell, and trade digital monsters called Axies. The game has gained massive popularity since its launch in 2018 and is expected to continue to grow over the next few years.
+
+
+Sorare (SOR): Sorare is a blockchain-based fantasy football game where users can buy, sell, and trade digital cards of real players. The game has gained massive popularity since its launch in 2019 and is expected to continue to grow over the next
+

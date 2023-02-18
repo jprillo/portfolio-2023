@@ -15,7 +15,7 @@ import projects from '../images/projects.png'
 import CardOne from '../components/cardOne'
 import Button from '../components/button'
 import arrow from '../images/arrow.png'
-import hills from '../images/hills.png'
+import hills from '../images/hill.png'
 import geeby from '../images/geeby.png'
 import vyn from '../images/Vyntrade.png'
 import video from '../images/intro-video.mp4'
@@ -39,7 +39,7 @@ export const IndexPageTemplate = ({
     useEffect(() => {
       setTimeout(() => {
         setIsLoaded(true);
-      }, 2000);
+      }, 1500);
     }, []);
   
   return (
@@ -76,7 +76,7 @@ export const IndexPageTemplate = ({
               Hello there, my name is Jason Prillo. I am a web developer and digtal artist based in Central Florida. I started Formal Flamingo Web Design in 2016 and specialize in making unique websites. </p><br/>
              
               <div className="button-container">
-                <div className="col-5">        
+                <div className="col-6">        
                     <Button
                     type="secondary sm"
                     cta= "More Me"
@@ -100,27 +100,31 @@ export const IndexPageTemplate = ({
             </div>
 
         </section>
-<div style={{background: "#0000ff"}}>
+<div style={{background: "#2E00B0"}}>
 <img style={{verticalAlign: "top"}} width= "100%" src={cloudtop} alt="this is the top of the clouds" />
 </div>
-    <div className="v-pad h-pad" style={{background: "linear-gradient(180deg, #0000FF 5.62%, #3744EA 68.68%, #487FE9 96.84%)"}}>
+    <div className="v-pad h-pad" style={{background: "#2E00B0"}}>
     <img width= "100%" src={projects} alt="this is a hero" />
     <div >
       <div className="v-pad gap-1" style={{display: "flex", flexDirection: "column" }}>
       <FeaturedWebsite
       title="Geeby"
-      description="geeby is"
+      description1="Geeby is a Gatsby.js starter that helps you make use of Netlify for content management delivering a static site that your client can change with ever talking to you."
+     
+      description2="Beware though, the code does release a blood thirsty purple monster."
       image={geeby}
       />
     <FeaturedWebsite
-     title="VynTrade"
-     description="Vyntrade is"
+     title="Real Wine Company"
+     description1="Real wine company is a real wine company who's name I am not putting in my content because I do not want to show up in searchs for them and it is easy to find them because I made thier website.  "
+     description2="I will leave the link so you can check them out though.  "
+    
      image={vyn}
     />
    
     <div style={{textAlign: 'center', width: "100%", display: "flex", justifyContent: "center", marginTop: "-2px"}}>
       
-      <Button cta="See Them All" link="/instructions" type="primary" icon={arrow}  />
+      <Button cta="See Them All" link="/code" type="primary" icon={arrow}  />
       </div>
 
       </div>
@@ -131,7 +135,7 @@ export const IndexPageTemplate = ({
   
     </div> 
     </div>
-    <div style={{background: "#0000ff"}}>
+    <div style={{background: "#2E00B0 "}}>
 <img style={{verticalAlign: "top"}} width= "100%" src={hills} alt="these are hills" />
 </div>
     <div className="h-pad gap-2" style={{display: "flex", flexDirection: "column", background: "#2f9733"}}>

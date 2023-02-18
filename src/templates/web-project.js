@@ -10,7 +10,7 @@ import ad from '../images/ad.png'
 import adtwo from '../images/ad-two.png'
 
 // eslint-disable-next-line
-export const BlogPostTemplate = ({
+export const WebProjectTemplate = ({
   content,
   contentComponent,
   description,
@@ -31,9 +31,9 @@ export const BlogPostTemplate = ({
                 <div className="col-9">
                 <h1 >
               {title}
-            </h1>     
+            </h1>            
 
-         <div className="blog-content">
+         <div className="web-content">
          <PostContent content={content} />
          </div>
          {tags && tags.length ? (
@@ -62,7 +62,7 @@ export const BlogPostTemplate = ({
   );
 };
 
-BlogPostTemplate.propTypes = {
+WebProjectTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -77,7 +77,7 @@ const BlogPost = ({ data }) => {
   return (
 <div >
     
-      <BlogPostTemplate
+      <WebProjectTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}

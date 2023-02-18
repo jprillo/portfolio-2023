@@ -24,9 +24,10 @@
                       <div  className={` responsive-nav ${isActive ? 'mobile-nav' : ''}`}>
                           <ul className="nav">
                                      <li><Link  activeClassName="active" active= "active" to="/">Home</Link></li>
-                              
-                              <li><Link to="/instructions/" activeClassName="active" >Instructions</Link></li>
-                              <li><Link to="/about/" activeClassName="active" >About</Link></li>                              
+                                     <li><Link to="/about/" activeClassName="active" >About</Link></li>                              
+                                     <li><Link to="/graphic-design/" activeClassName="active" >Code</Link></li>
+                                     <li><Link to="/web-development/" activeClassName="active" >Design</Link></li>
+                                                      
                               <li><Link to="/blog/" activeClassName="active" >Blog</Link></li>
                             
                            <div className="nav-button-container">

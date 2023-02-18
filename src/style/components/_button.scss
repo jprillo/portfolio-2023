@@ -1,7 +1,6 @@
 .button{   
    color: #fff;
    border-radius: 5px;
-   padding: 10px 25px;  
    font-weight: bold;
    background: transparent;
    cursor: pointer;
@@ -10,6 +9,13 @@
    display: inline-block; 
    outline: none;
    padding: .2em 1em;  
+   width: 100%;
+   p{
+    padding: .5em 2em; 
+    @include breakpoint(sm){
+        padding: .2em;  
+    }
+   }
     @include breakpoint(md){
         padding: .75em 2em;  
     }
@@ -58,19 +64,24 @@
 
 
     &.secondary{
-     background-color: inherit; 
+   background-color: black;
      cursor: pointer;
      z-index: 1;
      border: 1px solid white;
+     @include breakpoint(md){        
+        background-color: inherit; 
+    }
      &.sm{
+        background: black;
         border-color: black;
         p{
-            color: black;
+            color: white;
             font-size: 18px;
             font-weight: bold;
             font-family: $primary-font;
             @include breakpoint(sm){        
                font-size: 25px;
+               color: white;
            }
            @include breakpoint(md){        
                font-size: 20px;

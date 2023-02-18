@@ -1,17 +1,18 @@
 ---
-templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
-featuredImage: /img/3.png
+templateKey: web-project
+title: Geeby
+featuredImage: /img/geeby.png
 date: 2016-12-17T15:04:10.000Z
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
-featuredimage: /img/3.png
+featuredimage: /img/geeby.png
+color1: "#6f13b5"
 tags:
   - Programing
   - tasting
 ---
 
-![flavor wheel](/img/hero-background.png)
+![flavor wheel](/img/geeby.png)
 
 The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
 

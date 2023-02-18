@@ -1,7 +1,7 @@
 
 h1{
     color: white;
-     font-size: 40px;
+     font-size: 45px;
     font-family: $primary-font;
     font-weight: 600;
     text-align: left;
@@ -26,25 +26,22 @@ h1{
     text-align: left;
     background-color: inherit;   
     align-items: center;
-    padding-top:50px;
-    
-
-   
+    padding-top:50px;  
    
  
 }
 .pad-top{
-    padding-top: 15vh;
+    padding-top: 70px;
     @include breakpoint(md){ 
-        padding: 22vh 0 0 0 ;
+        padding-top: 100px;
        
     }
    
 }
 .hero-image{
-    padding: 0 15vw 0 25vw;
+    padding: 0 7vw;
     @include breakpoint(sm){        
-        padding: 0 20vw;
+        padding: 0 10vw 0 30vw;
     }
     @include breakpoint(md){        
         padding: 0 0 0 0;
@@ -53,11 +50,13 @@ h1{
 .subheading{
     font-family: $secondary-font;   
     color: white;
-    font-size: 18px;  
+    font-size: 20px; 
+    padding: 10px 0 20px; 
   
     
     @include breakpoint(sm){        
         font-size: 30px;
+        padding: 0; 
     }
     @include breakpoint(md){        
         font-size: 22px;

@@ -1,11 +1,12 @@
 ---
 templateKey: blog-post
-title: Mfake title
+title: "Technical SEO in 2023: What to Expect"
 featuredImage: /img/3.png
 date: 2016-12-17T15:04:10.000Z
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
 featuredimage: /img/3.png
+color1: purple
 tags:
   - Design
   - tasting
@@ -13,23 +14,26 @@ tags:
 
 ![flavor wheel](/img/hero-background.png)
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+As technology continues to evolve and more businesses move online, technical SEO will become increasingly important in 2023. Technical SEO is the process of optimizing your website so that search engines can better understand and index it, thus giving your website better visibility in search results.
 
-## What the updates mean to you
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+In 2023, webmasters will need to take extra steps to ensure their website is optimized for search engine crawlers. Search engine algorithms are constantly changing, and webmasters must keep up with these changes if they want to remain competitive. Some of the areas that webmasters should focus on include website speed, crawlability, mobile-friendliness, structured data, security, and website architecture.
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+Website Speed: Website speed is one of the most important factors for SEO in 2023. Search engines prefer websites that load quickly, as this helps create a better user experience. Webmasters should optimize their websites by compressing images, minifying CSS and JavaScript files, and using a Content Delivery Network (CDN).
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+Crawlability: Search engine crawlers will need to be able to crawl a website easily in 2023. Webmasters should ensure their website has a sitemap and internal linking structure that is easy for the crawlers to navigate. They should also make sure the robots.txt file is correctly configured.
+
+
+Mobile-Friendliness: Mobile-friendliness will be a major ranking factor in 2023. With more people accessing the internet via mobile devices, webmasters will need to ensure their website is optimized for mobile. This includes ensuring the website has a responsive design, fast loading times, and properly sized images.
+
+
+Structured Data: Structured data helps search engines understand the content on a website, so webmasters should ensure their website has structured data markup in 2023. This can be done using the Schema.org vocabulary or other markup languages like JSON-LD.
+
+
+Security: Security should be a top priority for webmasters in 2023. Hackers are constantly finding new ways to exploit websites, so it is important to ensure your website is as secure as possible. This includes using a secure socket layer (SSL) certificate, using strong passwords, and regularly patching the website. 
+
+
+Website Architecture: Website architecture plays a major role in SEO in 2023. Webmasters should ensure their website has a clear hierarchy and that all the pages are easily accessible. This includes having a logical internal linking

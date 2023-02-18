@@ -7,7 +7,7 @@ export default function Button(props) {
 
   <a  href= {props.link}>
     <button className={"button " + type} style={{display: "flex", alignItems: "center"}}>
-    <p style={{paddingRight: ".5em", width: "100%"}}>{props.cta}</p>  
+    <p style={{ width: "100%"}}>{props.cta}</p>  
 
       {
       props.icon

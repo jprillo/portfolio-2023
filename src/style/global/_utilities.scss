@@ -2,8 +2,8 @@
     padding-left: 5vw;
     padding-right: 5vw;
     @include breakpoint(sm){
-        padding-left: 5vw;
-        padding-right: 5vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
     @include breakpoint(md){
         padding-left: 4vw;
@@ -28,7 +28,10 @@
     gap: 1em;
 }
 .gap-1{
-    gap: 7vw
+    gap: 60px;
+    @include breakpoint(md){
+       gap: 7vw;
+    }
 }
 .gap-2{
 gap: 50px;

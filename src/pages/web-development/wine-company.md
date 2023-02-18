@@ -1,17 +1,18 @@
 ---
-templateKey: blog-post
-title: How to train your dog to run away
-featuredImage: /img/hero-background.png
+templateKey: web-project
+title: Wine Company
+featuredImage: /img/Vyntrade.png
 date: 2016-12-17T15:04:10.000Z
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
-
+featuredimage: /img/Vyntrade.png
+color1: "#720a0a"
 tags:
-  - Business
+  - Programing
   - tasting
 ---
 
-![flavor wheel](/img/hero-background.png)
+![flavor wheel](/img/Vyntrade.png)
 
 The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
 

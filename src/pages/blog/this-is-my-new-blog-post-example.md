@@ -5,6 +5,7 @@ date: 2022-07-30T01:23:11.284Z
 description: "this is a great blog post "
 featuredImage: /img/3.png
 featuredimage: /img/3.png
+color1: blue
 tags: 
   - Humor
 ---
