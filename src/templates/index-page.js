@@ -1,16 +1,9 @@
-import React from "react"
-import {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
-import cloudtop from '../images/cloudbottom.png'
-
-import Preloader from '../components/preloader'
-
 import "../style/main.scss"
-import FeaturedWebsite from '../components/featured-website'
 
-
-import Hero from '../components/hero'
+import cloudtop from '../images/cloudbottom.png'
 import projects from '../images/projects.png'
 import CardOne from '../components/cardOne'
 import Button from '../components/button'
@@ -19,8 +12,14 @@ import hills from '../images/hill.png'
 import geeby from '../images/geeby.png'
 import vyn from '../images/Vyntrade.png'
 import video from '../images/intro-video.mp4'
-
 import letter from '../images/letter.png'
+
+import Preloader from '../components/preloader'
+import { Clouds } from '../components/clouds';
+import FeaturedWebsite from '../components/featured-website'
+import Hero from '../components/hero'
+
+
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({   
@@ -39,7 +38,7 @@ export const IndexPageTemplate = ({
     useEffect(() => {
       setTimeout(() => {
         setIsLoaded(true);
-      }, 1500);
+      }, 1000);
     }, []);
   
   return (
@@ -50,7 +49,7 @@ export const IndexPageTemplate = ({
      <Preloader isLoaded={isLoaded}
      />
     
-  
+ 
       <Hero
           headingOne={headingOne}
           subheadingOne={subheadingOne}
@@ -61,45 +60,7 @@ export const IndexPageTemplate = ({
           heroButtonLinkTwo={heroButtonLinkTwo}
           
         />
-<section className="flex cloud v-pad h-pad gap-1" style={{width: "100%",  overflowY: "hidden", background: "white", alignItems: "center"}}>
-          <div className="col-6" >
-          <video controls width="100%" style={{ border: "solid black 5px"}}>
-      
-      <source src={video} type="video/mp4" 
-      />
-      Sorry, your browser doesn't support videos.
-    </video>
-          </div>
-          <div className="col-6"  >
-          <h2 style={{color: "black", padding: 0, marginTop: 0}}>Meet Mr. Prillo</h2>
-              <p style={{color: "black"}}>
-              Hello there, my name is Jason Prillo. I am a web developer and digtal artist based in Central Florida. I started Formal Flamingo Web Design in 2016 and specialize in making unique websites. </p><br/>
-             
-              <div className="button-container">
-                <div className="col-6">        
-                    <Button
-                    type="secondary sm"
-                    cta= "More Me"
-                    link= "/"
-                    icon = {arrow}
-                   
-                    />
-                
-                </div>       
-                <div className="col-6 "> 
-                <Button
-                    type="primary sm"
-                    cta= "Resume"
-                    link= "/"
-                    icon = {letter}
-                    />
-                   
-                </div>
-       
-            </div>
-            </div>
-
-        </section>
+<Clouds   video={video} arrow={arrow} letter={letter}  />
 <div style={{background: "#2E00B0"}}>
 <img style={{verticalAlign: "top"}} width= "100%" src={cloudtop} alt="this is the top of the clouds" />
 </div>
@@ -113,12 +74,13 @@ export const IndexPageTemplate = ({
      
       description2="Beware though, the code does release a blood thirsty purple monster."
       image={geeby}
+      link="/web-development/geeby"
       />
     <FeaturedWebsite
      title="Real Wine Company"
      description1="Real wine company is a real wine company who's name I am not putting in my content because I do not want to show up in searchs for them and it is easy to find them because I made thier website.  "
      description2="I will leave the link so you can check them out though.  "
-    
+     link="/web-development/wine-company"
      image={vyn}
     />
    
@@ -169,8 +131,8 @@ export const IndexPageTemplate = ({
    
 
 
-
-    </div>
+</div>
+    
   )
 }
 

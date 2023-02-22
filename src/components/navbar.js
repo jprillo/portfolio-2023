@@ -3,7 +3,7 @@
   import {Link} from "gatsby"
   import logo from '../images/logo.png'
   import Button from '../components/button'
-  import mail from '../images/letter.png'
+
 
 
   

@@ -12,7 +12,7 @@ export default function Button(props) {
       {
       props.icon
       ? <div className='btn-icon-contain'>        
-              <img width= "100%" src={props.icon}alt="this is a hero" />
+              <img  src={props.icon}alt="this is a hero" />
               </div>
       : null
       }

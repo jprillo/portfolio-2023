@@ -21,14 +21,19 @@ export default function Code({data}) {
     
   return <div >
       <Helmet>
-        <title>Geeby | Gatsby Starter Blog</title>
-        <meta name="description" content="VYNTRADE was founded in 2018 to offer consulting to Wine & Spirit Industry Companies.​" />
-        <meta name="theme-color" content="black" />
+        <title>Web Development | Jason prillo</title>
+        <meta name="description" content="These are some of my latest projects." />
+        <meta name="theme-color" content="red" />
       </Helmet>
      
-<div className=" h-pad " style={{background: "blue"}}>
+<div className=" h-pad  " style={{background: "darkblue"}}>
 <Layout>
+  <div className="pad-top center">
+<h1 className="center">Web Development Projects</h1>
+    <p>This is some of my latest projects. I have only included things I ethier own or have eplicit permission to use.</p>
+    </div>
   <div className="flex v-pad gap-2">
+ 
     <div className="col-8">
       <BlogArticle
       width = ""
@@ -91,7 +96,7 @@ export default function Code({data}) {
 export const query = graphql`
 
 query MyQuery {
-      allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post"}}}) {
+      allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "web-project"}}}) {
       edges {
         node {
           id

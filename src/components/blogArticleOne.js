@@ -31,6 +31,8 @@ export default function BlogArticle({
           case usedTags[2]: return tagColors[2];
           case usedTags[3]: return tagColors[3];
           case usedTags[4]:  return tagColors[4];
+
+          default:  return 'blueviolet';
           
          
         }

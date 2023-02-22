@@ -336,3 +336,16 @@ font-family: $secondary-font;
     }
   
 }
+
+
+.social-media-bar{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    text-align: right;
+    width: 100px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
