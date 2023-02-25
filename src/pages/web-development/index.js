@@ -4,17 +4,11 @@ import { graphql} from "gatsby"
 import { Helmet } from 'react-helmet'
 
 import FeaturedWebsite from '../../components/featured-website'
-import BlogArticle from '../../components/blogArticleOne'
-import vyn from '../../images/Vyntrade.png'
+
 
 export default function Code({data}) {
     const d = data.allMarkdownRemark;
-    const h = d.edges[0].node.frontmatter
-    const hslug = d.edges[0].node.fields.slug
-    const f = d.edges[1].node.frontmatter
-    const fslug = d.edges[1].node.fields.slug
-    const t = d.edges[2].node.frontmatter
-    const tslug = d.edges[2].node.fields.slug
+
     const otherPosts = d.edges
 
  

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import frame from '../images/frame.png'
+import { Link } from 'gatsby'
 import boner from '../images/2.png'
 
 
@@ -10,7 +11,7 @@ export default function CardOne(props) {
   
     return (
 
-        <a href="#" className="col-3 " style={{position:" relative", backgroundSize: "cover",backgroundPosition: "center", backgroundImage:  `url('${boner}')`,height: "300px"}}>
+        <Link to="#" className="col-3 " style={{position:" relative", backgroundSize: "cover",backgroundPosition: "center", backgroundImage:  `url('${boner}')`,height: "300px"}}>
 
 <img  src={frame} alt="this is a hero" style={{  width: "100%", height: "100%"}} />
         
@@ -18,7 +19,7 @@ export default function CardOne(props) {
           <h5 style={{color: "black", textAlign: "center", padding: 0, margin: 0}}>{props.title}</h5>
          
           </div>
-        </a>
+        </Link>
 
     )
 }

@@ -4,7 +4,7 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/layout2'
 import { Helmet } from 'react-helmet'
-import Button from '../components/button'
+
 
 import "../style/main.scss"
 
