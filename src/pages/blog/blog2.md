@@ -6,7 +6,7 @@ description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
 featuredImage: /img/win_20190324_12_08_00_pro.jpg
 featuredimage: /img/3.png
-color1: red
+color1: "#008000"
 tags:
   - Culture
   - tasting

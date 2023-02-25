@@ -26,7 +26,7 @@ export default function Blog({data}) {
         <meta name="theme-color" content="black" />
       </Helmet>
      
-<div className=" h-pad " style={{background: "blue"}}>
+<div className=" h-pad " style={{background: "#210d70"}}>
 <Layout>
   <div className="flex v-pad gap-2">
     <div className="col-8">

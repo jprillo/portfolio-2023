@@ -4,6 +4,7 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/layout2'
 import { Helmet } from 'react-helmet'
+import Button from '../components/button'
 
 import "../style/main.scss"
 
@@ -40,7 +41,7 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      
+  <div className='h-pad' style={{background: "#44043a"}}>
       <Layout>
  <Helmet>
         <title>Geeby Gatsby Starter | Contact Us</title>
@@ -50,14 +51,13 @@ export default class Index extends React.Component {
 
 
 
-        <div className='pad-top' >
+        <div className='pad-top'  >
         
-
+<h1 className='center'>Contact Us</h1>
           
-            <div >
-            <h1>Contact Us</h1>
-            <div className='contact'>
-            <div>
+            <div className='flex gap-1 pad-top' >
+              <div className='col-6'>
+              <div>
               <form
                 name="contact"
                 method="post"
@@ -118,13 +118,21 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div >
-                  <button className="primary-button" style={{margin: 0, textSize: "2em"}} type="submit">
-                    Send
+                <div className='col-6' >
+
+                  <button className="button primary" style={{display: "flex", alignItems: "center"}}type="submit">
+                    <p>Send</p>
                   </button>
                 </div>
               </form>
               </div>
+
+              </div>
+              <div className='col-6'>
+                
+              
+            <div className='contact'>
+            
               <div>
                 <div>
                 <p>Dan Nelson</p> 
@@ -148,10 +156,11 @@ export default class Index extends React.Component {
               </div>
               </div>
             </div>
-        
+        </div>
           
         </div>
       </Layout>
+      </div>    
     )
   }
 }

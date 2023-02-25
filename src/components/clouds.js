@@ -2,6 +2,11 @@ import React from "react";
 import {Link} from 'gatsby'
 import Button from '../components/button'
 
+
+import twitter from '../images/twitter.png'
+import github from '../images/github.png'
+
+
 export function Clouds({
   video,
   arrow,
@@ -36,10 +41,7 @@ export function Clouds({
               Hello there, my name is Jason Prillo. I am a web developer and digtal artist based in Central Florida. I started Formal Flamingo Web Design in 2016 and specialize in making unique websites. </p><br />
              
               <div className="button-container">
-                <div className="col-4">        
-                    <Button type="secondary sm" cta="More Me" link="/about" icon={arrow} />
-                
-                </div>       
+                    
                 <div className="col-4 "> 
                 <Button type="primary sm" cta="Resume" link="/" icon={letter} />
                    
@@ -47,10 +49,10 @@ export function Clouds({
        
             </div>
             <div className="social-media-bar">
-              <Link to="/">Link</Link>
-              <Link to="/">Link</Link>
-              <Link to="/">Link</Link>
-              <Link to="/">Link</Link>
+              <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
+              <Link to="/"> <img  src={twitter}alt="this is a hero" /></Link>
+              <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
+              <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
             </div>
             </div>
 

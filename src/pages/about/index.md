@@ -1,6 +1,6 @@
 ---
 title: Who is Mr. Prillo?
-color: purple
+color: "#295604"
 date: 2021-05-12
 templateKey: main-pages
 ---

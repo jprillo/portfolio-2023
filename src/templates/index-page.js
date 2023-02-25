@@ -5,7 +5,7 @@ import "../style/main.scss"
 
 import cloudtop from '../images/cloudbottom.png'
 import projects from '../images/projects.png'
-import CardOne from '../components/cardOne'
+
 import Button from '../components/button'
 import arrow from '../images/arrow.png'
 import hills from '../images/hill.png'
@@ -18,6 +18,9 @@ import Preloader from '../components/preloader'
 import { Clouds } from '../components/clouds';
 import FeaturedWebsite from '../components/featured-website'
 import Hero from '../components/hero'
+import ArtLinks from '../components/ArtLinks/index'
+
+
 
 
 
@@ -60,6 +63,7 @@ export const IndexPageTemplate = ({
           heroButtonLinkTwo={heroButtonLinkTwo}
           
         />
+     
 <Clouds   video={video} arrow={arrow} letter={letter}  />
 <div style={{background: "#2E00B0"}}>
 <img style={{verticalAlign: "top"}} width= "100%" src={cloudtop} alt="this is the top of the clouds" />
@@ -67,10 +71,11 @@ export const IndexPageTemplate = ({
     <div className="v-pad h-pad" style={{background: "#2E00B0"}}>
     <img width= "100%" src={projects} alt="this is a hero" />
     <div >
+     
       <div className="v-pad gap-1" style={{display: "flex", flexDirection: "column" }}>
       <FeaturedWebsite
       title="Geeby"
-      description1="Geeby is a Gatsby.js starter that helps you make use of Netlify for content management delivering a static site that your client can change with ever talking to you."
+      description1="Geeby is a starter template for Gatsby.js, a popular web development framework, that enables you to utilize Netlify for content management. By using Geeby, you can create a static website that allows your client to make changes without needing to contact you. "
      
       description2="Beware though, the code does release a blood thirsty purple monster."
       image={geeby}
@@ -86,7 +91,7 @@ export const IndexPageTemplate = ({
    
     <div style={{textAlign: 'center', width: "100%", display: "flex", justifyContent: "center", marginTop: "-2px"}}>
       
-      <Button cta="See Them All" link="/code" type="primary" icon={arrow}  />
+      <Button cta="See Them All" link="/code" type="primary sm" icon={arrow}  />
       </div>
 
       </div>
@@ -100,21 +105,10 @@ export const IndexPageTemplate = ({
     <div style={{background: "#2E00B0 "}}>
 <img style={{verticalAlign: "top"}} width= "100%" src={hills} alt="these are hills" />
 </div>
-    <div className="h-pad gap-2" style={{display: "flex", flexDirection: "column", background: "#2f9733"}}>
-    <div  style={{  display: "flex",  gap: "3vw"}}>
-<CardOne title="Beatrice Boner"  />
-<CardOne title="title"  />
-<CardOne title="title"  />
-<CardOne title="title" />
-</div>
-<div  style={{ display: "flex" ,  gap: "3vw"}}>
-<CardOne title="title"  />
-<CardOne title="title"  />
-<CardOne title="title"  />
-<CardOne title="title"  />
-</div>
+    <div className="h-pad gap-2" style={{ background: "#2f9733"}}>
 
-<Button cta="Let's Go" link="google.com" type="primary" icon={arrow} />
+<ArtLinks/>
+<Button cta="Let's Go" link="google.com" type="primary sm" icon={arrow} />
 </div>
 
 <div style={{background: "#181302", height: "50vh"}}>

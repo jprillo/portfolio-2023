@@ -1,5 +1,12 @@
 import React from 'react'
 import {Link} from 'gatsby'
+import github from '../images/github-negative.png'
+
+
+import twitter from '../images/twitter.png'
+
+
+
 
 
 
@@ -8,33 +15,34 @@ export default function FeaturedWebsite(props) {
     return (
       
 
-        <div className="flex gap-1 featured-website" style={{ overflow: "hidden"}}>
+        <div className="flex gap-1 " style={{ overflow: "hidden"}}>
         <div  className="col-6">
         <Link to ={props.link}>
-        <img height= "100%" src={props.image} alt="this is a hero" />
+        <img width= "100%" height="100%" style={{objectFit: "cover"}} src={props.image} alt="this is a hero" />
   
         </Link>
   </div>
-  <div className="col-6" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
-    <div>
-    <h3 style={{padding: "0 0 2rem 0"}}>{props.title}</h3>    
-    <div>
-    <p>{props.description1}</p><br/>
-    <p>{props.description2}</p>
-    </div>
-    </div>
-   
-    <div style={{display: "flex", justifyContent: "space-between"}}>
-     <div className='col-9'>
-     <Link to="/">Learn More</Link> 
-      </div> 
-      <div className='col-3' style={{display: "flex", justifyContent: "space-between"}}>
-      <Link to="/">Project</Link> 
-      <Link to="/">icon</Link> 
-    
-        </div>
-    </div>
-  </div>
+  <div className="col-6" style={{
+      position: "relative"
+    }}>
+          <h2 style={{
+        color: "white",
+        padding: 0,
+        marginTop: 0
+      }}>{props.title}</h2>
+              <p className="col-9">
+             {props.description1} </p><br />
+             <p className="col-9">
+             {props.description2} </p><br />
+             
+          
+            <div className="social-media-bar">
+              <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
+              <Link to="/"> <img  src={twitter}alt="this is a hero" /></Link>
+              <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
+       
+            </div>
+            </div>
   
         </div>
     )

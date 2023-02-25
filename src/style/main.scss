@@ -8,7 +8,8 @@
 @import "components/navbar";
 @import "components/hero";
 @import "components/preloader";
-
+@import "../components/SocialMediaBar/social-media-bar.scss";
+@import "../components/ArtLinks/artlinks.scss";
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
@@ -319,17 +320,7 @@ p{
 
     }
 }
-.featured-website{
-   img{ 
-    width:100%;
- }
- a{
-font-size: 22px;
-font-family: $secondary-font;
- color: yellow;
- 
-}
-}
+
 .website{
     img{
         height: 160px;
@@ -337,15 +328,21 @@ font-family: $secondary-font;
   
 }
 
-
-.social-media-bar{
-    position: absolute;
-    right: 0;
-    top: 20%;
-    text-align: right;
-    width: 100px;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    }
+label p{
+    font-size: 25px;
+    margin-bottom: .5rem;
+}
+input, textarea{
+    font-size: 25px;
+    padding: .25rem;
+    margin-bottom: 2rem;
+    width: 100%;
+   
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    outline: 5px solid  rgb(255, 0, 191);
+}
+form{
+    padding: 0 0 0 100px;
+}

@@ -1,12 +1,14 @@
-.button{   
+.button, .contact-button{   
    color: #fff;
    border-radius: 5px;
    font-weight: bold;
    background: transparent;
+  
    cursor: pointer;
    transition: all 0.2s ease;
    position: relative;
-   display: inline-block; 
+   display: flex; 
+   gap: .5rem;
    outline: none;
    padding: .2rem 1rem;  
    width: 100%;
@@ -19,6 +21,7 @@
      z-index: 1; 
      img{
         width: 100%;
+        margin-top: 4px;
      }        
      p{
          color: white;
@@ -41,6 +44,7 @@
      &.sm{
         img{
             width: 80%;
+            margin-top: 3px;
          }
         p{
             color: white;
@@ -77,6 +81,7 @@
 
     img{
         width: 100%;
+        margin-top: 4px;
      }   
      &.sm{
         background: black;
