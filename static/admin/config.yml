@@ -42,7 +42,7 @@ collections:
       - { label: 'HeroImage', name: heroImage, widget: image }
       - { label: 'HeroButtonLinkOne', name: 'heroButtonLinkOne', widget: 'string' }
       - { label: 'HeroButtonLinkTwo', name: 'heroButtonLinkTwo', widget: 'string' }
-      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "main-pages"}
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "web-project"}
       - {
           label: Cards,
           name: cards,
@@ -78,12 +78,3 @@ collections:
             ],
         }
     
-  - name: 'about'
-    label: 'About'
-    folder: 'src/pages/about'
-    create: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "main-pages"}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
- 

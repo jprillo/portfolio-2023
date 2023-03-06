@@ -29,6 +29,7 @@
 }
 .gap-1{
     gap: 60px;
+   
     @include breakpoint(md){
        gap: 7vw;
     }

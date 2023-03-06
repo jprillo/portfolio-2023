@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import { graphql } from "gatsby"
 import { Helmet } from 'react-helmet'
 import "../style/main.scss"
@@ -19,7 +19,7 @@ import { Clouds } from '../components/clouds';
 import FeaturedWebsite from '../components/featured-website'
 import Hero from '../components/hero'
 import ArtLinks from '../components/ArtLinks/index'
-
+import Footer from '../components/footer'
 
 
 
@@ -37,20 +37,14 @@ export const IndexPageTemplate = ({
 
 }) => {
  
-    const [isLoaded, setIsLoaded] = useState(false);
-    useEffect(() => {
-      setTimeout(() => {
-        setIsLoaded(true);
-      }, 1000);
-    }, []);
+ 
   
   return (
 
     <div style={{position: "relative", overflowY: "hidden"}} >
      {helmet || ""}
 
-     <Preloader isLoaded={isLoaded}
-     />
+     <Preloader/>
     
  
       <Hero
@@ -111,8 +105,8 @@ export const IndexPageTemplate = ({
 <Button cta="Let's Go" link="google.com" type="primary sm" icon={arrow} />
 </div>
 
-<div style={{background: "#181302", height: "50vh"}}>
-
+<div style={{background: "#181302"}}>
+<Footer/>
 </div>
     
       

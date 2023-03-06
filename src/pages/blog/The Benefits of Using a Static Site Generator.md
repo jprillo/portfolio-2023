@@ -3,6 +3,8 @@ templateKey: blog-post
 title: The Benefits of Using a Static Site Generator
 featuredImage: /img/hero-background.png
 date: 2016-12-17T15:04:10.000Z
+author: Jason Prillo
+authorImage: /img/3.png
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
 color1: "#D98880"

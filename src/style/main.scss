@@ -49,7 +49,7 @@
 }
 .blog-article{
     border-radius: 25px;
-    border: solid 5px $primary-color;    
+    border: solid 10px $primary-color;    
     background-repeat: no-repeat;
     background-position: center;
     display:flex;
@@ -60,9 +60,12 @@
     overflow: hidden;
     box-sizing: border-box;
     transition: all .4s ease-in-out;
+    h1{
+        font-size: 30px;
+    }
     &:hover{     
     background-size: 200% 200%;
-     border-color: white !important;   
+     
     }
     &:hover h1{
        color: rgb(187, 178, 178);
@@ -86,36 +89,27 @@
     background: linear-gradient(180deg, rgba(23, 23, 24, 0.3) 0%, #222024 100%);
 }
 .feature{
-    height: 60vh;
+    height: 550px;
     padding: 1em 1.5em;
     @include breakpoint(md){ 
         padding: 2em 3em;
     }
   
-   
+   span{
+    font-size: 25px;
+    font-family: $primary-font;
+   }
     h1{
         font-size: 40px;
         @include breakpoint(md){ 
-            font-size: 70px;
+            font-size: 40px;
         }
 
     }
     h2{
         font-size: 50px;
     }
-    .tag-flag{
-        padding: .2em 1em;
-        @include breakpoint(md){
-           
-            padding: .5em 2em;
-        }
-        span{
-            font-size: 18px;
-            @include breakpoint(md){
-                font-size: 22px;
-            }
-        }
-    }
+
    
 }
 .nnn{
@@ -131,7 +125,7 @@
     
 }
 .normal {
-    height: 29vh;
+    height: 250px;
     padding: 1em 1.5em;
    
    
@@ -139,19 +133,19 @@
     display: none;
    }
     h1{
-        font-size: 40px;
+        font-size: 25px;
     }
-    .tag-flag{
-        padding: .2em 1em; 
-    } 
+ 
     span{
-        font-size: 18px;
+        font-family: $primary-font;
+        font-size: 20px;
     }
 }
 .tag-flag{
 
-color: white;
-background: $primary-color;
+color: black;
+
+font-weight: bold;
 bottom: 0px;
 left: 0px;
 border-radius: 25px;
@@ -345,4 +339,69 @@ input:focus, textarea:focus, select:focus{
 }
 form{
     padding: 0 0 0 100px;
+}
+
+
+
+
+.light-text{
+   h2, p, a{
+        color: white
+    }
+}
+.dark-text, .about{
+   h1, h2, p{
+         color: black
+     }
+ }
+ .light-text{
+    h1, h2, p, a{
+          color: black
+      }
+  }
+ .dark-nav{
+    background: inherit;
+ }
+ .light-nav{
+    background: #280984;
+ }
+
+.tag-bar{
+
+    a, p{
+        padding: .5rem 2rem;
+        margin: .5rem;
+        color: #b3b8be;
+        font-family: $primary-font;
+        font-weight: bold;
+        border-radius: 50px;
+        background:  #47494f;
+    }
+}
+.t1:hover{
+    background: #4deeea;
+ 
+}
+.t1:hover .all{
+    background: red;
+}
+.t2:hover{
+    background: #ffb6c1;
+}
+.t3:hover{
+    background: lightgoldenrodyellow;
+}
+.t4:hover{
+    background: #98ffc1;
+}
+
+.col-4-gap {
+    width:100%;
+    @include breakpoint(md){       
+      width: 32%; 
+    min-width:300px;
+      margin-bottom: 3rem;       
+     }  }
+.gap-3{
+    gap: 2%;
 }

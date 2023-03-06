@@ -4,6 +4,7 @@ import { graphql} from "gatsby"
 import { Helmet } from 'react-helmet'
 
 import BlogArticle from '../../components/blogArticleOne'
+import TagBar from '../../components/tagBar'
 
 
 export default function Blog({data}) {
@@ -26,9 +27,12 @@ export default function Blog({data}) {
         <meta name="theme-color" content="black" />
       </Helmet>
      
-<div className=" h-pad " style={{background: "#210d70"}}>
-<Layout>
-  <div className="flex v-pad gap-2">
+<div style={{background: "#202124"}}>
+<Layout >
+  <div className="h-pad pad-top">
+<TagBar/>
+</div>
+  <div className="flex v-pad h-pad"  >
     <div className="col-8">
       <BlogArticle
       width = ""
@@ -39,25 +43,11 @@ export default function Blog({data}) {
       description = {h.description}
       featuredImage = {h.featuredImage.publicURL}
       />
-      <div className="column v-pad-5">
-        <div className="flex wrap gap-2">
-        {otherPosts.map((item) => (
-  <BlogArticle
-  width = "nnn"
-  type = "normal"
-  slug = {item.node.fields.slug}
-  tag = {item.node.frontmatter.tags[0]}
-  title = {item.node.frontmatter.title}
-  description = {item.node.frontmatter.description}
-  featuredImage = {item.node.frontmatter.featuredImage.publicURL}
-  />
-
-))}
    
-      </div>
+
+  
     </div>
-    </div>
-    <div className="col-4 column gap-2">
+    <div className="col-4 column gap-2" style={{padding: "0 0 0 50px"}}>
     <BlogArticle
      width = ""
       type = "normal"
@@ -81,6 +71,22 @@ export default function Blog({data}) {
        
     </div>
     </div>
+    <div className="flex gap-2 h-pad" >
+        {otherPosts.map((item) => (
+          <div className="col-6">
+  <BlogArticle
+  width = "nnn"
+  type = "normal"
+  slug = {item.node.fields.slug}
+  tag = {item.node.frontmatter.tags[0]}
+  title = {item.node.frontmatter.title}
+  description = {item.node.frontmatter.description}
+  featuredImage = {item.node.frontmatter.featuredImage.publicURL}
+  />
+</div>
+))}
+   
+      </div>
     </Layout>
 </div>
  

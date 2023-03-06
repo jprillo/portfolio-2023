@@ -20,10 +20,10 @@ export default function Code({data}) {
         <meta name="theme-color" content="red" />
       </Helmet>
      
-<div  style={{background: "#202124"}}>
-<Layout color="light-nav">
-  <div className="pad-top center h-pad">
-<h1 className="center">Web Development Projects</h1>
+<div style={{background: "darkgreen"}}>
+<Layout>
+  <div className="pad-top center">
+<h1 className="center">Graphic Design & Art</h1>
     <p>This is some of my latest projects. I have only included things I ethier own or have eplicit permission to use.</p>
     </div>
   <div className=" v-pad gap-2 h-pad">

@@ -5,6 +5,9 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout2";
 import Content, { HTMLContent } from "../components/Content";
+import ArthorBar from '../components/author-bar'
+import TagBar from '../components/tagBar'
+
 
 import ad from '../images/ad.png'
 import adtwo from '../images/ad-two.png'
@@ -14,48 +17,50 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
+  color1,
+  author, 
+  authorImage,
+  date,
   tags,
   title,
-  color1,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
 
   return (
-    <div className=" h-pad" style={{background: color1}}>
+    <div  style={{background: "#202124"}}>
       <Layout>
       {helmet || ""}
      
       
-            <div className="flex gap-2 pad-top">
-                <div className="col-9">
+            <div className="h-pad flex gap-2 pad-top">
+                <div className="col-8 ">
+        <p>{tags[0]}</p>
                 <h1 >
               {title}
             </h1>     
-
+<ArthorBar author={author} date={date} authorImage={authorImage} />
          <div className="blog-content">
          <PostContent content={content} />
          </div>
-         {tags && tags.length ? (
+       
            <div style={{ marginTop: `4rem` }}>
              <h4>Tags</h4>
-             <ul className="taglist">
-               {tags.map((tag) => (
-                 <li key={tag + `tag`}>
-                   <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                 </li>
-               ))}
-             </ul>
+           
+                 
+             <TagBar/>
+            
            </div>
-         ) : null}
+      
      
                 </div>
 
-                <div className="col-3">
+                <div className="col-4 " style={{padding: "0 4rem"}}>
                 <img className="v-pad-10" width="100%" src= {ad} alt="Sauronana is a rotten banana cursed by a dark lord." />
                 <img className="v-pad-10" width="100%" src= {adtwo} alt="Jason weather is the worlds most point less app. " />
                 </div>
             </div>
+        
             </Layout>
       
     </div>
@@ -68,6 +73,7 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   color1: PropTypes.string,
+  author: PropTypes.string,
   helmet: PropTypes.object,
 };
 
@@ -82,6 +88,9 @@ const BlogPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         color1={post.frontmatter.color1}
+        date={post.frontmatter.date}
+        author={post.frontmatter.author}
+        authorImage={post.frontmatter.authorImage.publicURL}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -118,6 +127,10 @@ export const pageQuery = graphql`
         color1
         description
         tags
+        authorImage {
+          publicURL
+        }
+        author
       }
     }
   }

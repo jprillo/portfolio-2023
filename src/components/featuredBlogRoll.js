@@ -9,7 +9,7 @@ export default function FeaturedBlogRoll(props) {
         "Programing", "Business", "Design", "Culture" , "Humor"
       ]
       const tagColors = [
-        "#590202", "#045B0D", "#051390", "#813C16", "#7D0590"
+        "#590202", "#045B0D", "#051390", "#00700e", "#7D0590"
       ]
     return (
 

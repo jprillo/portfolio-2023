@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Redacted&family=Vollkorn&display=swap');
   
   $primary-font: 'Poppins', sans-serif;
   $secondary-font: 'Vollkorn', serif;
+$redacted: 'Redacted', cursive;
  
-
+.redacted{
+  font-family: $redacted;
+  margin: 0 1em;
+}
   h1, h2, h3, h4, h5 {
     font-family: $primary-font;
    font-weight: normal;

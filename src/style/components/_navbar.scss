@@ -20,7 +20,7 @@
       position: absolute;
       height: 10%;
       width:70%;
-      background:$primary-color;
+      background:#98FFC1;
       box-shadow: .5px .5px black;
       border-radius:10px;
       transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
@@ -37,7 +37,7 @@
     
       .burger-close .line {
         box-shadow: none;
-        background: $secondary-color;
+        background:#98FFC1;
         }
       .burger-close .line01 {
       transform:rotate(45deg);
@@ -76,8 +76,8 @@ color: $secondary-color;
   
 display: flex;
 justify-content: space-between;
-height: 70px;
-  background-color: inherit;     
+
+    
  
   transition: background .5s; 
   position: relative;
@@ -112,7 +112,7 @@ margin-left: 25px;
   display: flex;
   flex-direction: column;
   height: 100vh;  
-  background: black;
+  background: #FEE1F3;
   z-index: 1000;
   text-align: center;
   @include breakpoint(md){
@@ -170,14 +170,14 @@ margin-left: 25px;
 }
 .nav a{
   @include breakpoint(md){
-      font-family: $secondary-font;
- 
-      color: white;
+      font-family: $primary-font; 
+      font-weight: 700;
       font-size: 20px;
       line-height: 120%;
       margin: .5em;
       padding: .5em;
       text-transform:capitalize;
+      color: white;
   }
   &:hover {
     color: $hover-color;

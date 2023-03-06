@@ -1,8 +1,10 @@
 ---
 templateKey: blog-post
-title: "Netlify Acquiring Gatsby: What Does It Mean for the Future of Web Development?"
+title: "What Does Netlify Acquiring Gatsby Mean for the future of Web Development?"
 featuredImage: /img/3.png
 date: 2016-12-17T15:04:10.000Z
+author: Jason Prillo
+authorImage: /img/3.png
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
 featuredimage: /img/3.png

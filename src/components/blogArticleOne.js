@@ -17,13 +17,13 @@ export default function BlogArticle({
         "Programing", "Business", "Design", "Culture" , "Humor"
       ]
       const tagColors = [
-        "#BC0000", "#045B0D", "#051390", "#813C16", "#7D0590"
+        "#6FFFFF", "#f1d296", "#FEE1F3", "lightgoldenrodyellow", "#98ffc1"
       ]
    
     return (
 
         <Link to = {slug} className={width}>
-        <div className= {"blog-article " + type} style={{backgroundImage:  `linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('${featuredImage}')`,
+        <div className= {"blog-article " + type} style={{backgroundImage:  `linear-gradient(180deg, rgba(0, 0, 0, 0.44) 0%,rgba(0, 0, 0, 0.64) 50%, rgba(0, 0, 0, 0.81) 100%), url('${featuredImage}')`,
       borderColor: (() => {          
         switch (tag) { 
           case usedTags[0]:   return tagColors[0];

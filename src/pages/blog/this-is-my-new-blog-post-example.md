@@ -2,6 +2,8 @@
 templateKey: blog-post
 title: this is my new blog post example
 date: 2022-07-30T01:23:11.284Z
+author: Jason Prillo
+authorImage: /img/3.png
 description: "this is a great blog post "
 featuredImage: /img/3.png
 featuredimage: /img/3.png

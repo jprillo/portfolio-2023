@@ -7,8 +7,8 @@ headingTwo: What can Geeby do for you?
 headingThree: Some Key Features
 headingFour: Find out what our customers think
 heroImage: /img/manatee.png
-heroButtonLinkOne: https://github.com
-heroButtonLinkTwo: /about/
+heroButtonLinkOne: /web-development/
+heroButtonLinkTwo: /contact/
 
 templateKey: index-page
 cards:

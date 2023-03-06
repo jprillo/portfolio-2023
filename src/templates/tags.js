@@ -2,6 +2,7 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout2";
+import TagBar from '../components/tagBar'
 
 import BlogArticle from '../components/blogArticleOne';
 
@@ -9,17 +10,17 @@ class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
     const postLinks = posts.map((post) => (
-   
+  <div className="col-4-gap">
 <BlogArticle
      width = "nnn"
-      type = "feature"
+      type = "normal"
       slug = {post.node.fields.slug}
       tag = {post.node.frontmatter.tags[0]}
       title = {post.node.frontmatter.title}
       description = {post.node.frontmatter.description}
       featuredImage = {post.node.frontmatter.featuredImage.publicURL}
       />
-  
+  </div> 
     ));
     
     const tag = this.props.pageContext.tag;
@@ -31,21 +32,25 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section style={{background:"#202124"}}>
           <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div
-                className="pad-top"
-              >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <div className="col-8">{postLinks}</div>
+          
+          
+              <div className="pad-top h-pad" >
+              <TagBar/>
+                <h3 >{tagHeader}</h3>
+             
+                <div className="flex wrap gap-3">
+                {postLinks}
+                  
+                  </div>
+               
                 <p>
                   <Link to="/tags/">Browse all tags</Link>
                 </p>
               </div>
-            </div>
-          </div>
+          
+          
         </section>
       </Layout>
     );

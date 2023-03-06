@@ -20,7 +20,7 @@ export default function Hero(props) {
     return (
       <div   style={{position: "relative", backgroundImage:  `url('${background}')`, backgroundSize: "cover", backgroundPosition: "top", overflowY: "hidden", width: "100%"}}>
       <div className='h-pad hero-container' >
-      <NavBar isActive={state.isActive} toggleNavbar={() => toggleNavbar()} />
+      <NavBar color="dark-nav" isActive={state.isActive} toggleNavbar={() => toggleNavbar()} />
         <section className="hero flex gap-1">
         <div className="col-6" >
       

@@ -42,7 +42,7 @@ export default class Index extends React.Component {
   render() {
     return (
   <div className='h-pad' style={{background: "#44043a"}}>
-      <Layout>
+      <Layout color='dark-nav'>
  <Helmet>
         <title>Geeby Gatsby Starter | Contact Us</title>
         <meta name="description" content="Contact Geeby if you dare.​" />

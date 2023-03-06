@@ -3,6 +3,8 @@ templateKey: blog-post
 title: "Technical SEO in 2023: What to Expect"
 featuredImage: /img/3.png
 date: 2016-12-17T15:04:10.000Z
+author: Jason Prillo
+authorImage: /img/3.png
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
 featuredimage: /img/3.png
@@ -12,7 +14,7 @@ tags:
   - tasting
 ---
 
-![flavor wheel](/img/hero-background.png)
+![flavor wheel](/img/maze.jpg)
 
 
 As technology continues to evolve and more businesses move online, technical SEO will become increasingly important in 2023. Technical SEO is the process of optimizing your website so that search engines can better understand and index it, thus giving your website better visibility in search results.

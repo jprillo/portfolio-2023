@@ -5,7 +5,7 @@ export default function TagFlag(props) {
 
     return (
         <div className="tag-flag" style={{
-            backgroundColor: (() => {          
+            color: (() => {          
               switch (props.tag) { 
                 case props.tag1 :   return props.color1;
                 case props.tag2 :   return props.color2;

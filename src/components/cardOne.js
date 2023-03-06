@@ -11,7 +11,7 @@ export default function CardOne(props) {
   
     return (
 
-        <Link to="#" className="col-3 " style={{position:" relative", backgroundSize: "cover",backgroundPosition: "center", backgroundImage:  `url('${boner}')`,height: "300px"}}>
+        <Link to="#" className="col-3 " style={{position:" relative", backgroundSize: "",backgroundPosition: "center", backgroundImage:  `url('${boner}')`,height: "300px"}}>
 
 <img  src={frame} alt="this is a hero" style={{  width: "100%", height: "100%"}} />
         

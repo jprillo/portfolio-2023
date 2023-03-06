@@ -29,7 +29,7 @@ const codeStyles = {
 // markup
 const NotFoundPage = () => {
   return (
-    <Layout>
+    <Layout color= "light-nav">
     <main style={pageStyles}>
       <title>Not found</title>
       <h1 style={headingStyles}>Page not found</h1>

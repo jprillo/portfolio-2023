@@ -2,6 +2,8 @@
 templateKey: blog-post
 title: 7 Promising NFTs to Keep an Eye On in 2023
 date: 2016-12-17T15:04:10.000Z
+author: Jason Prillo
+authorImage: /img/3.png
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
 featuredImage: /img/win_20190324_12_08_00_pro.jpg

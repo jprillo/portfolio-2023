@@ -23,7 +23,7 @@ export const WebProjectTemplate = ({
 
   return (
     <div className=" h-pad" style={{background: color1}}>
-      <Layout>
+      <Layout color= "dark-nav">
       {helmet || ""}
      
       
