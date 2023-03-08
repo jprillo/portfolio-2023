@@ -8,9 +8,19 @@ import logo from "../images/logo.png"
 
 export default function Footer() {
     return (
-        <footer style={{background: "#181302"}}>
-        <h3 style={{ color: "white", paddingTop: "2em" }}>Follow Us</h3>
-        <div style={{ display: "flex", justifyContent: "center", padding: "1em 0 2em" }}>
+        <footer  style={{background: "#635218"}}>
+          <div className='flex h-pad'>
+          <div className='col-6'>
+<div>
+          <Link to="/">
+            <img width="200px" src={logo} alt="Vyntrade logo" />
+          </Link>
+        </div>
+</div>
+            <div className='col-6'>
+      
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <h3 style={{ color: "white"}}>Follow Us</h3>
           <a style={{ margin: "0 20px" }} href="https://facebook.com/vyntrade" alt="facebook">
             <img width="50px" alt="facebook" src={facebook} />
           </a>
@@ -28,11 +38,15 @@ export default function Footer() {
             <img width="50px" alt="linkedin" src={linkedin} />
           </a>
         </div>
-        <div className="center v-pad-1">
-          <Link to="/">
-            <img width="200px" src={logo} alt="Vyntrade logo" />
-          </Link>
-        </div>
+            </div>
+
+
+
+          </div>
+       <div style={{background: "#181302"}}>
+        <p style={{textAlign: "center"}}>Copyright 2023 Jason Prillo Web Development</p>
+       </div>
+ 
       </footer>
     )
 }

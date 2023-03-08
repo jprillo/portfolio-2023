@@ -32,8 +32,8 @@ export default function Blog({data}) {
   <div className="h-pad pad-top">
 <TagBar/>
 </div>
-  <div className="flex v-pad h-pad"  >
-    <div className="col-8">
+  <div className="flex h-pad"  >
+    <div className="col-8-gap">
       <BlogArticle
       width = ""
       type = "feature"
@@ -47,7 +47,7 @@ export default function Blog({data}) {
 
   
     </div>
-    <div className="col-4 column gap-2" style={{padding: "0 0 0 50px"}}>
+    <div className="col-4-gap column gap-2 padd" >
     <BlogArticle
      width = ""
       type = "normal"

@@ -102,7 +102,11 @@ export const IndexPageTemplate = ({
     <div className="h-pad gap-2" style={{ background: "#2f9733"}}>
 
 <ArtLinks/>
-<Button cta="Let's Go" link="google.com" type="primary sm" icon={arrow} />
+<div style={{textAlign: 'center', width: "100%", display: "flex", justifyContent: "center", marginTop: "-2px"}}>
+      
+      <Button cta="See Them All" link="/code" type="primary sm" icon={arrow}  />
+      </div>
+
 </div>
 
 <div style={{background: "#181302"}}>

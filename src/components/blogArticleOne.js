@@ -17,7 +17,7 @@ export default function BlogArticle({
         "Programing", "Business", "Design", "Culture" , "Humor"
       ]
       const tagColors = [
-        "#6FFFFF", "#f1d296", "#FEE1F3", "lightgoldenrodyellow", "#98ffc1"
+        "#d5FFFd", "#f1d296", "#FEE1F3", "lightgoldenrodyellow", "#98ffc1"
       ]
    
     return (

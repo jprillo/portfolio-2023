@@ -47,6 +47,13 @@
     left: 43%;
     bottom: 10vh;
 }
+.padd{
+    padding: 0 0 0 0;
+    @include breakpoint(md){ 
+        padding: 0 0 0 50px;
+       
+    }
+}
 .blog-article{
     border-radius: 25px;
     border: solid 10px $primary-color;    
@@ -63,6 +70,7 @@
     h1{
         font-size: 30px;
     }
+ 
     &:hover{     
     background-size: 200% 200%;
      
@@ -177,8 +185,10 @@ margin-bottom: 1em;
     padding: 3vh 0;
 }
 h2{
-    padding: 5vh 0;
+    padding: 1rem 0;
+    color: white;
 }
+h3{ color:#d5FFFd;}
 p{
     padding: 1em 0;
 }
@@ -398,10 +408,21 @@ form{
 .col-4-gap {
     width:100%;
     @include breakpoint(md){       
-      width: 32%; 
+      width: 34%; 
     min-width:300px;
       margin-bottom: 3rem;       
      }  }
 .gap-3{
     gap: 2%;
 }
+.col-8-gap {
+    width:100%;
+    @include breakpoint(md){       
+      width: 65.5%; 
+    min-width:300px;
+      margin-bottom: 3rem;       
+     }  }
+.gap-3{
+    gap: 2%;
+}
+
