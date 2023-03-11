@@ -27,7 +27,7 @@ export const WebProjectTemplate = ({
       {helmet || ""}
      
       
-            <div className="flex gap-2 pad-top">
+            <div className="flex gap-2 pad-top b-pad">
                 <div className="col-9">
                 <h1 >
               {title}

@@ -5,7 +5,8 @@ import Button from '../components/button'
 
 import twitter from '../images/twitter.png'
 import github from '../images/github.png'
-
+import dribbble from '../images/dribbble.png'
+import formalflamingo from '../images/formalflamingo.png'
 
 export function Clouds({
   video,
@@ -51,8 +52,8 @@ export function Clouds({
             <div className="social-media-bar">
               <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
               <Link to="/"> <img  src={twitter}alt="this is a hero" /></Link>
-              <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
-              <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
+              <Link to="/"> <img  src={dribbble}alt="this is a hero" /></Link>
+              <Link to="/"> <img  src={formalflamingo}alt="this is a hero" /></Link>
             </div>
             </div>
 

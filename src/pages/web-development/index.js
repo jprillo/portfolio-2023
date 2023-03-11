@@ -38,6 +38,8 @@ export default function Code({data}) {
               description1="Real wine company is a real wine company who's name I am not putting in my content because I do not want to show up in searchs for them and it is easy to find them because I made thier website.  "
               description2="I will leave the link so you can check them out though.  "
               link={item.node.fields.slug}
+              link2={item.node.frontmatter.link2}
+              link3={item.node.frontmatter.link3}
               image={item.node.frontmatter.featuredImage.publicURL}
              />
 
@@ -69,7 +71,8 @@ query MyQuery {
           frontmatter {
             title
             description
-            tags
+            link3
+            link2
             featuredImage {
                 publicURL
              }

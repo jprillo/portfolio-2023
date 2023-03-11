@@ -18,7 +18,7 @@ const Layout = ({ children, color }) => {
         <NavBar color= {color} isActive={isActive} toggleNavbar={toggleNavbar} />
       </header>
       <main className="contain">{children}</main>
-<Footer/>
+<Footer color= {color} />
     </div>
   )
 }

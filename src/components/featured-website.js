@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import github from '../images/github-negative.png'
+import icon from '../images/leave.png'
 
-
-import twitter from '../images/twitter.png'
+import info from '../images/info.png'
 
 
 
@@ -37,9 +37,10 @@ export default function FeaturedWebsite(props) {
              
           
             <div className="social-media-bar">
-              <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
-              <Link to="/"> <img  src={twitter}alt="this is a hero" /></Link>
-              <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
+              <Link to={props.link3}> <img  src={github}alt="this is a hero" /></Link>
+              <Link to={props.link2}> <img src={icon}alt="this is a hero" /></Link>
+              <Link to={props.link}> <img  src={info}alt="this is a hero" /></Link>
+            
        
             </div>
             </div>

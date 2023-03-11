@@ -360,13 +360,13 @@ form{
     }
 }
 .dark-text, .about{
-   h1, h2, p{
+   h1, h2, h3,li, p{
          color: black
      }
  }
  .light-text{
     h1, h2, p, a{
-          color: black
+          color: white
       }
   }
  .dark-nav{
@@ -425,4 +425,65 @@ form{
 .gap-3{
     gap: 2%;
 }
+.b-pad{
+    padding-bottom: 100px;
+}
 
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 10px;
+    perspective: 800px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    background: red;
+    border: 1px solid black;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    display: none;
+  }
+  
+  .card.flipped .back {
+    display: flex;
+  }
+  
+  .card h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .card a {
+    font-size: 0.9rem;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .card a:hover {
+    color: darkblue;
+  }

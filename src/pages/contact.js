@@ -41,19 +41,19 @@ export default class Index extends React.Component {
 
   render() {
     return (
-  <div className='h-pad' style={{background: "#44043a"}}>
-      <Layout color='dark-nav'>
+  <div style={{background: "#202124"}}>
+      <Layout >
  <Helmet>
-        <title>Geeby Gatsby Starter | Contact Us</title>
+        <title>Jason Prillo | Let's Work Together</title>
         <meta name="description" content="Contact Geeby if you dare.​" />
         <meta name="theme-color" content="black" />
       </Helmet>
 
 
 
-        <div className='pad-top'  >
+        <div className='pad-top h-pad'  >
         
-<h1 className='center'>Contact Us</h1>
+<h1 className='center'>Let's Work Together</h1>
           
             <div className='flex gap-1 pad-top' >
               <div className='col-6'>

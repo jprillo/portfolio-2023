@@ -28,7 +28,7 @@ export default function Blog({data}) {
       </Helmet>
      
 <div style={{background: "#202124"}}>
-<Layout >
+<Layout color="ddd" >
   <div className="h-pad pad-top">
 <TagBar/>
 </div>
@@ -71,7 +71,7 @@ export default function Blog({data}) {
        
     </div>
     </div>
-    <div className="flex gap-2 h-pad" >
+    <div className="flex gap-2 h-pad b-pad" >
         {otherPosts.map((item) => (
           <div className="col-6">
   <BlogArticle

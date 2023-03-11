@@ -7,10 +7,8 @@ description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
 featuredimage: /img/geeby.png
 color1: "#6f13b5"
-links:
-  - { link: "google.com", alt: "this is where you are going", icon: /img/geeby.png}
-  - { link: "facebook.com", alt: "this is where you are going", icon: /img/geeby.png}
-  - { link: "facebook.com", alt: "this is where you are going", icon: /img/geeby.png}   
+link2: "https://www.github.com"
+link3: "https://www.formalflamingo.com"
 ---
 
 ![flavor wheel](/img/geeby.png)

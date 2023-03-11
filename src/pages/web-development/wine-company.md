@@ -7,10 +7,10 @@ description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
 featuredimage: /img/Vyntrade.png
 color1: "#720a0a"
-links:
-  - { link: "google.com", alt: "this is where you are going", icon: /img/geeby.png}
-  - { link: "facebook.com", alt: "this is where you are going", icon: /img/geeby.png}
-  - { link: "facebook.com", alt: "this is where you are going", icon: /img/geeby.png}
+link2: "https://www.github.com"
+link3: "https://www.vyntrade.com"
+---
+
 ---
 
 ![flavor wheel](/img/Vyntrade.png)

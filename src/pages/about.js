@@ -17,7 +17,7 @@ export default function About() {
     }
   return (
     
-        <div className="about  " style={{background: "white"}}>
+        <div  style={{background: "#202124"}}>
                      <Helmet titleTemplate="%s | Blog">
             <title>"About Me</title>
             <meta
@@ -26,7 +26,7 @@ export default function About() {
             />
           </Helmet>
 <Layout color= 'light-nav' >
-<div className='pad-top flex gap-1 v-pad h-pad'>
+<div className='pad-top flex gap-1 v-pad h-pad b-pad '>
     <div className='col-6'>
         <h1>Learn More About Mr. Prillo</h1>
         <p style={{padding: "1em 0"}}> lot of this information is not for everyone and has been redacted, for your safety of course. <br/>
@@ -51,7 +51,7 @@ To see this information you must type in the passord. </p>
 wearing a Che shirt but Che is a penis as well.</p>
     </div>
 </div>
-<div className=' h-pad'>
+<div className=' h-pad b-pad light-text'>
 <h2>Experience</h2>
 
 <div>
@@ -75,7 +75,7 @@ wearing a Che shirt but Che is a penis as well.</p>
     </div>
     <div style={{borderBottom: "solid white 4px", width: "90%", marginTop: "3rem", marginLeft: "10%"}}></div>
 </div>
-<div>
+<div className='b-pad' >
 
     <div className="flex " style={{justifyContent: "space-around", paddingLeft: "10%"}}>
         <div className='col-3'><p>2006</p></div>
@@ -102,7 +102,7 @@ wearing a Che shirt but Che is a penis as well.</p>
     </div>
     <div className='col-6'  style={{background: "#E8F7FF", boxShadow: " inset 10px 4px 0px rgba(0, 0, 0, 1)", borderRadius: "25px", height: "300px", padding: "2rem"}}>
     <h3 style={{color: "indigo"}}>Design</h3>
-    <ul>
+    <ul className='dark-text' >
             <li>Figma</li>
             <li>Gimp</li>
             <li>Inkscape</li>

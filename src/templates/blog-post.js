@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { kebabCase } from "lodash";
+
 import { Helmet } from "react-helmet";
-import { graphql, Link } from "gatsby";
+import { graphql} from "gatsby";
 import Layout from "../components/layout2";
 import Content, { HTMLContent } from "../components/Content";
 import ArthorBar from '../components/author-bar'
@@ -33,7 +33,7 @@ export const BlogPostTemplate = ({
       {helmet || ""}
      
       
-            <div className="h-pad flex gap-2 pad-top">
+            <div className="h-pad flex gap-2 pad-top b-pad">
                 <div className="col-8 ">
         <p>{tags[0]}</p>
                 <h1 >

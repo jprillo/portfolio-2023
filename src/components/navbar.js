@@ -12,7 +12,7 @@
   const NavBar = ({ toggleNavbar, isActive, color }) => {   
      
       return(
-          <section style={{background:  color === 'dark-nav' ? 'inherit' : '#b026ff'}}  className={`navagation-wrap ${color === 'dark-nav' ? '' : 'h-pad'}  col-12  ${isActive ? 'mobile-wrap' : ''}`}> 
+          <section style={{background:  color === 'dark-nav' ? 'inherit' : '#7b07bf'}}  className={`navagation-wrap ${color === 'dark-nav' ? '' : 'h-pad'}  col-12  ${isActive ? 'mobile-wrap' : ''}`}> 
   
               <div id="main-nav-wrap" >
                   <div className="logo-wrap" >

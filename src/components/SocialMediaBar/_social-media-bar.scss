@@ -4,7 +4,9 @@
     display: flex;
     justify-content: space-between;
     margin: 50px 20px;
-
+    img{
+        width: 50px;
+    }
 
     @include breakpoint(md){ 
         position: absolute;
@@ -17,9 +19,11 @@
         flex-direction: column;
         justify-content: space-between;
         margin: 0;
+      
 
         a{
             margin: 10px 0;
+            
         }
         
     }

@@ -6,16 +6,16 @@ import linkedin from "../images/linkedin.png"
 import twitter from "../images/twitter.png"
 import logo from "../images/logo.png"
 
-export default function Footer() {
+export default function Footer({color}) {
     return (
-        <footer  style={{background: "#635218"}}>
-          <div className='flex h-pad'>
+        <footer  >
+          <div className='flex h-pad' style={{alignItems: "center",paddingTop: "2rem", paddingBottom: "2rem",  backgroundColor:  color === 'dark-nav' ? '#5b4709' : '#065b5b'}} >
           <div className='col-6'>
-<div>
+\
           <Link to="/">
-            <img width="200px" src={logo} alt="Vyntrade logo" />
+            <img width="150px" src={logo} alt="Jason Prillo logo" />
           </Link>
-        </div>
+      
 </div>
             <div className='col-6'>
       
@@ -43,8 +43,8 @@ export default function Footer() {
 
 
           </div>
-       <div style={{background: "#181302"}}>
-        <p style={{textAlign: "center"}}>Copyright 2023 Jason Prillo Web Development</p>
+       <div style={{background: "darkpink"}}>
+        <p style={{textAlign: "center", color: "grey", padding: "em 0"}}>Copyright 2023 Jason Prillo Web Development</p>
        </div>
  
       </footer>

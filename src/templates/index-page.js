@@ -9,8 +9,7 @@ import projects from '../images/projects.png'
 import Button from '../components/button'
 import arrow from '../images/arrow.png'
 import hills from '../images/hill.png'
-import geeby from '../images/geeby.png'
-import vyn from '../images/Vyntrade.png'
+import FlipCardConatiner from '../components/flipCardContainer'
 import video from '../images/intro-video.mp4'
 import letter from '../images/letter.png'
 
@@ -33,7 +32,8 @@ export const IndexPageTemplate = ({
   heroButtonLinkOne,
   heroButtonLinkTwo,
   image,
-  helmet
+  helmet, 
+  webprojects
 
 }) => {
  
@@ -67,21 +67,20 @@ export const IndexPageTemplate = ({
     <div >
      
       <div className="v-pad gap-1" style={{display: "flex", flexDirection: "column" }}>
-      <FeaturedWebsite
-      title="Geeby"
-      description1="Geeby is a starter template for Gatsby.js, a popular web development framework, that enables you to utilize Netlify for content management. By using Geeby, you can create a static website that allows your client to make changes without needing to contact you. "
-     
-      description2="Beware though, the code does release a blood thirsty purple monster."
-      image={geeby}
-      link="/web-development/geeby"
-      />
-    <FeaturedWebsite
-     title="Real Wine Company"
-     description1="Real wine company is a real wine company who's name I am not putting in my content because I do not want to show up in searchs for them and it is easy to find them because I made thier website.  "
-     description2="I will leave the link so you can check them out though.  "
-     link="/web-development/wine-company"
-     image={vyn}
-    />
+      {webprojects.slice(2, 4).map((item) => (
+              <FeaturedWebsite
+              title={item.node.frontmatter.title}
+              description1="Real wine company is a real wine company who's name I am not putting in my content because I do not want to show up in searchs for them and it is easy to find them because I made thier website.  "
+              description2="I will leave the link so you can check them out though.  "
+              link={item.node.fields.slug}
+              link3={item.node.frontmatter.link2}
+              link2={item.node.frontmatter.link3}
+              image={item.node.frontmatter.featuredImage.publicURL}
+             />
+
+
+))}
+
    
     <div style={{textAlign: 'center', width: "100%", display: "flex", justifyContent: "center", marginTop: "-2px"}}>
       
@@ -99,8 +98,8 @@ export const IndexPageTemplate = ({
     <div style={{background: "#2E00B0 "}}>
 <img style={{verticalAlign: "top"}} width= "100%" src={hills} alt="these are hills" />
 </div>
-    <div className="h-pad gap-2" style={{ background: "#2f9733"}}>
-
+    <div className="h-pad gap-2 b-pad" style={{ background: "#2f9733"}}>
+    <FlipCardConatiner/>
 <ArtLinks/>
 <div style={{textAlign: 'center', width: "100%", display: "flex", justifyContent: "center", marginTop: "-2px"}}>
       
@@ -110,7 +109,8 @@ export const IndexPageTemplate = ({
 </div>
 
 <div style={{background: "#181302"}}>
-<Footer/>
+<Footer color="dark-nav"/>
+
 </div>
     
       
@@ -129,8 +129,10 @@ export const IndexPageTemplate = ({
 }
 
 const IndexPage = ({ data }) => {
-  const home = data.markdownRemark;
+  const home = data.index;
   const h = home.frontmatter;
+  const p = data.projects;
+  const webprojects = p.edges
  
   return (
 
@@ -146,9 +148,7 @@ const IndexPage = ({ data }) => {
           headingTwo = {h.headingTwo} 
           headingThree = {h.headingThree}
           headingFour = {h.headingFour} 
-          cards = {h.cards}
-          dependancies = {h.dependancies} 
-          reviews = {h.reviews}
+          webprojects = {webprojects}
           helmet = {
             <Helmet titleTemplate="%s | Blog">
             <title>{`${h.headingOne}`}</title>
@@ -175,7 +175,7 @@ export default IndexPage;
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  index:  markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {        
         headingOne
@@ -190,32 +190,29 @@ export const query = graphql`
         headingTwo
         headingThree
         headingFour
-        cards{
-          title
-          icon {
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, quality: 65)
-            }
-          }
-          alt
-          desc
-        }
-        dependancies{
-          title
-          icon {
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, quality: 65)
-            }
-          }
-          alt
-          desc
-        }
-        reviews{
-          name
-          desc
-        }
+    
         
    
+      }
+    }
+
+   projects: allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "web-project"}}}) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            description
+            featuredImage{
+              publicURL
+            }
+            link2
+            link3
+          }
+        }
       }
     }
   }

@@ -20,7 +20,7 @@ export default function Code({data}) {
         <meta name="theme-color" content="red" />
       </Helmet>
      
-<div style={{background: "darkgreen"}}>
+<div style={{background: "#202124"}}>
 <Layout>
   <div className="pad-top center">
 <h1 className="center">Graphic Design & Art</h1>
