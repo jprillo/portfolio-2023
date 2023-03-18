@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FlipCard from './flipCard';
 
-const FlipCardContainer = ({  }) => {
+const FlipCardContainer = () => {
   const [flippedIndex, setFlippedIndex] = useState(null);
   const artcards = [
     {
@@ -32,6 +32,7 @@ const FlipCardContainer = ({  }) => {
           key={index}
           title={card.title}
           link={card.link}
+          image={card.link}
           isFlipped={index === flippedIndex}
           onClick={() => handleCardClick(index)}
         />

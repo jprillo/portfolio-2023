@@ -2,6 +2,27 @@ import React from "react"
 import Layout from '../../components/layout2'
 import { graphql} from "gatsby"
 import { Helmet } from 'react-helmet'
+import CardOne from '../../components/cardOne'
+
+import animal from '../../images/art-images/animal.png'
+import clown from '../../images/art-images/clown-family.png'
+import dumbo from '../../images/art-images/cometh-dumbo.png'
+import satan from '../../images/art-images/cometh-satan.png'
+import dog from '../../images/art-images/dirty-old-dog.png'
+import sun from '../../images/art-images/diva-sun.png'
+import prison from '../../images/art-images/dudes-in-prison.png'
+import sauron from '../../images/art-images/eye-of-saurananas.png'
+import fed from '../../images/art-images/fed-smoker-tribute.png'
+import frank from '../../images/art-images/frank.png'
+import joker from '../../images/art-images/jokerizine.png'
+import juice from '../../images/art-images/juice-bear.png'
+import law from '../../images/art-images/lawyers.png'
+import morty from '../../images/art-images/there-will-be-morty.png'
+import yavo from '../../images/art-images/yavo.png'
+
+
+
+
 
 import FeaturedWebsite from '../../components/featured-website'
 
@@ -11,7 +32,68 @@ export default function Code({data}) {
 
     const otherPosts = d.edges
 
- 
+    const artcards = [
+      {
+        title: 'Animal',
+        link: animal,
+      },
+      {
+        title: 'Card 2',
+        link: clown,
+      },
+      {
+        title: 'Card 3',
+        link: dumbo
+      },
+      {
+        title: 'Card 3',
+        link: satan
+      },
+      {
+        title: 'Animal',
+        link: dog,
+      },
+      {
+        title: 'Card 2',
+        link: prison,
+      },
+      {
+        title: 'Animal',
+        link: fed,
+      },
+      {
+        title: 'Card 2',
+        link: frank,
+      },
+      {
+        title: 'Card 3',
+        link: joker
+      },
+      {
+        title: 'Card 3',
+        link: juice
+      },
+      {
+        title: 'Animal',
+        link: law,
+      },
+      {
+        title: 'Card 2',
+        link: morty,
+      },
+      {
+        title: 'Card 3',
+        link: yavo 
+      },
+      {
+        title: 'Card 3',
+        link: sauron
+      },
+      {
+        title: 'Animal',
+        link: sun,
+      },
+    ];
     
   return <div >
       <Helmet>
@@ -31,18 +113,10 @@ export default function Code({data}) {
     <div className="col-12">
   
       <div className="column v-pad-5">
-        <div className="flex wrap gap-2">
-        {otherPosts.map((item) => (
-              <FeaturedWebsite
-              title={item.node.frontmatter.title}
-              description1="Real wine company is a real wine company who's name I am not putting in my content because I do not want to show up in searchs for them and it is easy to find them because I made thier website.  "
-              description2="I will leave the link so you can check them out though.  "
-              link={item.node.fields.slug}
-              image={item.node.frontmatter.featuredImage.publicURL}
-             />
-
-
-))}
+        <div >
+        {artcards.map((card, index) => (
+      <img width="45%" src={card.link}/>
+      ))}
    
       </div>
     </div>

@@ -215,7 +215,7 @@ p{
     flex-wrap: wrap;
     justify-content: center;
     .card{
-        min-width: 25vw;
+        min-width: 250px;
         img{
             width: 100%;
            
@@ -436,14 +436,19 @@ form{
   }
   
   .card {
-    width: 200px;
-    height: 200px;
+
     position: relative;
     margin: 10px;
     perspective: 800px;
     transition: transform 0.5s;
     transform-style: preserve-3d;
     cursor: pointer;
+    min-width: 250px;
+    width: 100%;
+    @include breakpoint(md){ 
+    width: 20%;
+    margin-bottom: 5rem;
+    }
   }
   
   .card.flipped {
@@ -456,11 +461,17 @@ form{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;    
     backface-visibility: hidden;
-    background: red;
-    border: 1px solid black;
+    background: #ECE2CE;  
+    border: 2px solid black;
+    p{
+        color: black;
+    }
+    
+    img{
+        width: 50px;
+    }
   }
   
   .back {
@@ -470,6 +481,7 @@ form{
   
   .card.flipped .back {
     display: flex;
+    flex-direction: column;
   }
   
   .card h2 {
@@ -487,3 +499,10 @@ form{
   .card a:hover {
     color: darkblue;
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  

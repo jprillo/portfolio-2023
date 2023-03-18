@@ -3,23 +3,34 @@ import React from 'react'
 import frame from '../images/frame.png'
 import { Link } from 'gatsby'
 import boner from '../images/2.png'
+import info from '../images/info.png'
 
 
 
 
-export default function CardOne(props) {
+export default function CardOne({ title, link, isFlipped, onClick, image }) {
   
     return (
 
-        <Link to="#" className="col-3 " style={{position:" relative", backgroundSize: "",backgroundPosition: "center", backgroundImage:  `url('${boner}')`,height: "300px"}}>
-
+        <div  className={` card ${isFlipped ? 'flipped' : ''}`} onClick={onClick} style={{position:" relative", backgroundSize: "",backgroundPosition: "center", height: "300px"}}>
+   <div className="front" style={{ backgroundSize: "cover",backgroundPosition: "center", backgroundImage:  `url('${image}')`}}>
 <img  src={frame} alt="this is a hero" style={{  width: "100%", height: "100%"}} />
-        
-    <div style={{position: "absolute", bottom: "-20px", left: "0", right: 0, margin: "auto", background: "white", padding: "2px", width: '75%', border: "solid black 2px"}} >
-          <h5 style={{color: "black", textAlign: "center", padding: 0, margin: 0}}>{props.title}</h5>
+  
+    <div style={{display: isFlipped ? 'none' : 'block', position: "absolute", bottom: "-20px", left: "0", right: 0, margin: "auto", background: "white", padding: "2px", width: '75%', border: "solid black 2px"}} >
+          <h5 style={{display: isFlipped ? 'none' : 'block', color: "black", textAlign: "center", padding: 0, margin: 0}}>{title}</h5>
          
           </div>
-        </Link>
+          </div>  
+          <div className="back" style={{padding: isFlipped ? '1rem 1.5rem' : 'none'}}>
+            <div>
+            <h2>{title}</h2>
+            <p>Beatrice Boner is part of a 10,000 piece NFT collection releasing in 2023.</p>
+            </div>
+            <div style={{alignSelf: "end"}} >
+        <Link to={link}><img style={{width: "50px"}}  src={info} alt="this is a hero"  /></Link>
+        </div>
+      </div>
+        </div>
 
     )
 }

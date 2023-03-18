@@ -46,7 +46,7 @@ To see this information you must type in the passord. </p>
         </div>
     </div>
     <div className='col-6 center' style={{padding: "0 5rem", display: "flex", flexDirection: "column", justifyContent: "center", backgroundColor: isCool ? "" : "black"}}>        
-        <img style={{display: isCool ? 'block' : 'none'}} width="70%" src={jason}/>
+        <img style={{display: isCool ? 'block' : 'none'}} width="70%" alt="jason prillo" src={jason}/>
         <p style={{display: isCool ? 'block' : 'none'}} >this is not an image of Mr Prillo merely a penis 
 wearing a Che shirt but Che is a penis as well.</p>
     </div>

@@ -5,6 +5,8 @@ featuredImage: /img/geeby.png
 date: 2016-12-17T15:04:10.000Z
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
+description2: The Coffee Taster’s Flavor Wheel, the official resource used by
+  coffee tasters, has been revised for the first time this year.
 featuredimage: /img/geeby.png
 color1: "#6f13b5"
 link2: "https://www.github.com"

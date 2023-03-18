@@ -9,7 +9,7 @@ import projects from '../images/projects.png'
 import Button from '../components/button'
 import arrow from '../images/arrow.png'
 import hills from '../images/hill.png'
-import FlipCardConatiner from '../components/flipCardContainer'
+
 import video from '../images/intro-video.mp4'
 import letter from '../images/letter.png'
 
@@ -99,7 +99,7 @@ export const IndexPageTemplate = ({
 <img style={{verticalAlign: "top"}} width= "100%" src={hills} alt="these are hills" />
 </div>
     <div className="h-pad gap-2 b-pad" style={{ background: "#2f9733"}}>
-    <FlipCardConatiner/>
+    
 <ArtLinks/>
 <div style={{textAlign: 'center', width: "100%", display: "flex", justifyContent: "center", marginTop: "-2px"}}>
       

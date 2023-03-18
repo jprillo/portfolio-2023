@@ -22,12 +22,12 @@ export const WebProjectTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <div className=" h-pad" style={{background: color1}}>
-      <Layout color= "dark-nav">
+    <div  style={{background: "#202124"}}>
+      <Layout>
       {helmet || ""}
      
       
-            <div className="flex gap-2 pad-top b-pad">
+            <div className="flex gap-1 pad-top b-pad h-pad">
                 <div className="col-9">
                 <h1 >
               {title}
