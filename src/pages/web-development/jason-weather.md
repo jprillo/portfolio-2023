@@ -3,10 +3,8 @@ templateKey: web-project
 title: Jason Weather
 featuredImage: /img/jason-weather.png
 date: 2016-12-17T15:04:10.000Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by
-  coffee tasters, has been revised for the first time this year.
-description2: The Coffee Taster’s Flavor Wheel, the official resource used by
-  coffee tasters, has been revised for the first time this year.
+description: Jason Weather is the only place where you can find out what the weather is like where I am. 
+description2: The idea was to make a super vain weather app that insults you for wanting to know your own weather. 
 featuredimage: /img/jason-weather.png
 color1: "#6f13b5"
 link2: "https://www.github.com"
@@ -15,7 +13,8 @@ link3: "https://jasonweather.netlify.app"
 
 ![flavor wheel](/img/jason-weather.png)
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+You will not however find the weather where you are. If you think about it, how selfish is it to always look at the weather where you are. This is making use of an Openweathermap API
+The idea was to make a super vain weather app that insults you for wanting to know your own weather. Sure, this is king of a dumb idea but if you made a better one leave me the link in my contact. I wont go to it though. 
 
 While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
 

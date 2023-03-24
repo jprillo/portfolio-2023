@@ -3,11 +3,9 @@ templateKey: web-project
 title: Old Portfolio
 featuredImage: /img/old-portfolio.png
 date: 2016-12-17T15:04:10.000Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by
-  coffee tasters, has been revised for the first time this year.
+description: This is the original personal website. The first thing I ever coded. 
 featuredimage: /img/old-portfolio.png
-description2: The Coffee Taster’s Flavor Wheel, the official resource used by
-  coffee tasters, has been revised for the first time this year.
+description2: I'm just kinding the rest are just even more embarrassing and I ride a manatee over a rainbow on my current one. 
 color1: "#6f13b5"
 link2: "https://www.github.com"
 link3: "https://jasonprillo.com"

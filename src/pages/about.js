@@ -4,6 +4,7 @@ import React, {useState} from 'react'
 import Layout from '../components/layout2'
 import { Helmet } from 'react-helmet'
 import jason from '../images/2.png'
+import {Link} from 'gatsby'
 
 export default function About() {
     const [isCool, setCoolness] = useState(false);
@@ -56,39 +57,39 @@ wearing a Che shirt but Che is a penis as well.</p>
 
 <div>
 
-    <div className="flex " style={{justifyContent: "space-around", paddingLeft: "10%"}}>
-        <div className='col-3'><p>jgjbhg</p></div>
-        <div className='col-3'><p>jgjbhg</p></div>
-        <div className='col-6'><p>cjhchchj  h v huojds noid nds0io hdsoi od od hdodch udhcd oudcsghouds godshdogdc ud gou gocu gcsauo</p></div>
+    <div className="flex pad-top " style={{justifyContent: "space-around", paddingLeft: "10%"}}>
+        <div className='col-3'><p>2017 - Present</p></div>
+        <div className='col-3'><p>Web Developer</p></div>
+        <div className='col-6'><p>I have been working for myself as a web developer in Florida. My agencies name is <Link to="https://formalflamingo.com" style={{color: "pink"}}> Formal Flamingo</Link>. </p></div>
    
     </div>
-    <div style={{borderBottom: "solid white 4px", width: "90%", marginTop: "3rem", marginLeft: "10%"}}></div>
+    <div style={{borderBottom: "solid #d5FFFd 4px", width: "90%", marginTop: "3rem", marginLeft: "10%"}}></div>
 </div>
 
 <div>
   
-    <div className="flex " style={{justifyContent: "space-around", paddingLeft: "10%"}}>
-        <div className='col-3'><p>jgjbhg</p></div>
-        <div className='col-3'><p>jgjbhg</p></div>
-        <div className='col-6'><p>cjhchchj  h v huojds noid nds0io hdsoi od od hdodch udhcd oudcsghouds godshdogdc ud gou gocu gcsauo</p></div>
+    <div className="flex " style={{justifyContent: "space-around", paddingLeft: "10%", paddingTop: "3rem",}}>
+        <div className='col-3'><p>2006 - 2016</p></div>
+        <div className='col-3'><p>Teacher</p></div>
+        <div className='col-6'><p>During this time I was an ESE teacher at various schools and programs for criminally insane children and a one church.  </p></div>
    
     </div>
-    <div style={{borderBottom: "solid white 4px", width: "90%", marginTop: "3rem", marginLeft: "10%"}}></div>
+    <div style={{borderBottom: "solid #f1d296 4px", width: "90%", marginTop: "3rem", marginLeft: "10%", }}></div>
 </div>
 <div className='b-pad' >
 
-    <div className="flex " style={{justifyContent: "space-around", paddingLeft: "10%"}}>
+    <div className="flex  " style={{justifyContent: "space-around", paddingLeft: "10%", paddingTop: "3rem",}}>
         <div className='col-3'><p>2006</p></div>
         <div className='col-3'><p>College</p></div>
-        <div className='col-6'><p>Jason Prillo went to the University of Central Florida where he 
+        <div className='col-6'><p>=I went to the University of Central Florida where I 
             <span className= {` ${isCool ? "" : "redacted"}`} > {` ${isCool ? "studied barely ever and learned almost nothing but" : "   Sorry but you will find me far too clever"  }`}  </span>  obtained a degree in Social Science Education. </p></div>
    
     </div>
-    <div style={{borderBottom: "solid white 4px", width: "90%", marginTop: "3rem", marginLeft: "10%"}}></div>
+    <div style={{borderBottom: "solid #FEE1F3 4px", width: "90%", marginTop: "3rem", marginLeft: "10%"}}></div>
 </div>
 
 <h2>Tools</h2>
-<div className='flex' style={{paddingLeft: "10%", gap: "3rem"}}>
+<div className='flex pad-top' style={{paddingLeft: "10%", gap: "3rem"}}>
     <div className='col-6' style={{background: "#2C2C2C", boxShadow: " inset 10px 4px 0px rgba(0, 0, 0, 1)", borderRadius: "25px", height: "300px", padding: "2rem"}}>
         <h3>Code</h3>
         <ul>

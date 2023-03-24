@@ -62,8 +62,8 @@ export const IndexPageTemplate = ({
 <div style={{background: "#2E00B0"}}>
 <img style={{verticalAlign: "top"}} width= "100%" src={cloudtop} alt="this is the top of the clouds" />
 </div>
-    <div className="v-pad h-pad" style={{background: "#2E00B0"}}>
-    <img width= "100%" src={projects} alt="this is a hero" />
+    <div className="v-pad h-pad" style={{background: "#2E00B0", overflowX: "hidden"}}>
+    <img className='projects-image' width= "100%" src={projects} alt="this is a hero" />
     <div >
      
       <div className="v-pad gap-1" style={{display: "flex", flexDirection: "column" }}>

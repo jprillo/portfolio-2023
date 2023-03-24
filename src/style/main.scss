@@ -505,4 +505,11 @@ form{
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
   }
+  .projects-image{
+        width: 200%;
+        @include breakpoint(md){ 
+            width: 100%;
+           
+            }
+  }
   
