@@ -7,7 +7,7 @@ description: Wine Company is a real wine business. I do not want to show up on t
 description2: This is a Gatsby site I built for them with a Netlify CMS. It launch in it's current form in 2022 and has performed great. 
 featuredimage: /img/Vyntrade.png
 color1: "#720a0a"
-link2: "https://www.github.com"
+link2: "https://github.com/jprillo/gatsby3starter"
 link3: "https://www.vyntrade.com"
 ---
 

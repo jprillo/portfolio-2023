@@ -7,7 +7,7 @@ description: Jason Weather is the only place where you can find out what the wea
 description2: The idea was to make a super vain weather app that insults you for wanting to know your own weather. 
 featuredimage: /img/jason-weather.png
 color1: "#6f13b5"
-link2: "https://www.github.com"
+link2: "https://github.com/jprillo/weather-app"
 link3: "https://jasonweather.netlify.app"
 ---
 

@@ -47,7 +47,7 @@ To see this information you must type in the passord. </p>
         </div>
     </div>
     <div className='col-6 center' style={{padding: "0 5rem", display: "flex", flexDirection: "column", justifyContent: "center", backgroundColor: isCool ? "" : "black"}}>        
-        <img style={{display: isCool ? 'block' : 'none'}} width="70%" alt="jason prillo" src={jason}/>
+        <img style={{display: isCool ? 'block' : 'none'}} width="100%" alt="jason prillo" src={jason}/>
         <p style={{display: isCool ? 'block' : 'none'}} >this is not an image of Mr Prillo merely a penis 
 wearing a Che shirt but Che is a penis as well.</p>
     </div>
@@ -71,7 +71,7 @@ wearing a Che shirt but Che is a penis as well.</p>
     <div className="flex " style={{justifyContent: "space-around", paddingLeft: "10%", paddingTop: "3rem",}}>
         <div className='col-3'><p>2006 - 2016</p></div>
         <div className='col-3'><p>Teacher</p></div>
-        <div className='col-6'><p>During this time I was an ESE teacher at various schools and programs for criminally insane children and a one church.  </p></div>
+        <div className='col-6'><p>During this time I was an ESE teacher at various schools and programs for criminally insane children and a one church. Guess which was more annoying?  <span className= {` ${isCool ? "" : "redacted"}`} > {` ${isCool ? "The Church ... Obviously" : "   Sorry but you will find me far too clever"  }`}  </span>    </p></div>
    
     </div>
     <div style={{borderBottom: "solid #f1d296 4px", width: "90%", marginTop: "3rem", marginLeft: "10%", }}></div>
@@ -81,7 +81,7 @@ wearing a Che shirt but Che is a penis as well.</p>
     <div className="flex  " style={{justifyContent: "space-around", paddingLeft: "10%", paddingTop: "3rem",}}>
         <div className='col-3'><p>2006</p></div>
         <div className='col-3'><p>College</p></div>
-        <div className='col-6'><p>=I went to the University of Central Florida where I 
+        <div className='col-6'><p>I went to the University of Central Florida where I 
             <span className= {` ${isCool ? "" : "redacted"}`} > {` ${isCool ? "studied barely ever and learned almost nothing but" : "   Sorry but you will find me far too clever"  }`}  </span>  obtained a degree in Social Science Education. </p></div>
    
     </div>
@@ -107,12 +107,16 @@ wearing a Che shirt but Che is a penis as well.</p>
             <li>Figma</li>
             <li>Gimp</li>
             <li>Inkscape</li>
-            <li>Midjourney</li>
+   
             
 
         </ul>
         </div>
         </div>
+
+        <div>
+            <p>Do you like this site? Do you want a site like this for your own business? Perhaps you are more interested in Geeby the Gatsby starter the trys to kill you. Maybe you are here becauese you want to buy bananas from a fictional antgonist. Possibly you have a yacht and need someone to tour the world with? When I was 30 I went to my first water park. I could tell you all about it. Thank You.  </p>
+        </div> 
 </div>
 </Layout>
 

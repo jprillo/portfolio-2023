@@ -4,6 +4,7 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/layout2'
 import { Helmet } from 'react-helmet'
+import manatee from '../../static/img/manatee-rider.png'
 
 
 import "../style/main.scss"
@@ -51,11 +52,11 @@ export default class Index extends React.Component {
 
 
 
-        <div className='pad-top h-pad'  >
+        <div className='pad-top h-pad b-pad'  >
         
 <h1 className='center'>Let's Work Together</h1>
           
-            <div className='flex gap-1 pad-top' >
+            <div className='flex gap-1 pad-top' style={{alignItems: "center"}} >
               <div className='col-6'>
               <div>
               <form
@@ -131,30 +132,7 @@ export default class Index extends React.Component {
               <div className='col-6'>
                 
               
-            <div className='contact'>
-            
-              <div>
-                <div>
-                <p>Dan Nelson</p> 
-                <p>Cell: +1 (813) 335 1295</p>
-                <p>Email: dnelson@vyntrade.com</p>
-                </div><br/>
-
-                <div>
-                
-
-
-
-                <p>Steven M. Rowland</p> 
-                <p>Cell: + 1 (240) 994 7565</p>
-                <p>Email: srowland@vyntrade.com</p>
-                </div>
-     
-
-
-               
-              </div>
-              </div>
+           <img width="100%" src={manatee} alt="Jason Prillo riding a manatee" />
             </div>
         </div>
           

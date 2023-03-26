@@ -8,7 +8,7 @@ description2: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
 featuredimage: /img/css-button-maker.png
 color1: "#6f13b5"
-link2: "https://www.github.com"
+link2: "https://github.com/jprillo/button-maker"
 link3: "https://css-buttonmaker.netlify.app"
 ---
 

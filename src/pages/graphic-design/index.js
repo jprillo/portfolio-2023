@@ -115,7 +115,7 @@ export default function Code({data}) {
       <div className="column v-pad-5">
         <div >
         {artcards.map((card, index) => (
-      <img width="45%" src={card.link}/>
+      <img width="50%" src={card.link}/>
       ))}
    
       </div>

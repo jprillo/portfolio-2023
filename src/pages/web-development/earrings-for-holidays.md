@@ -7,7 +7,7 @@ description: Earrings for Holidays is a e-comerce site that sells earring but fo
 description2: Actually the only earrings right now on there are for Christmas. Maybe we should have named it Christmas for Holidays. 
 featuredimage: /img/earrings-for-holidays.png
 color1: "#6f13b5"
-link2: "https://www.github.com"
+link2: "https://github.com/jprillo/earringlanding"
 link3: "https://earringsforholidays.com"
 ---
 

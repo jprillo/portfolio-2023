@@ -38,8 +38,8 @@ export default function Code({data}) {
               description1={item.node.frontmatter.description}
               description2={item.node.frontmatter.description2}
               link={item.node.fields.slug}
-              link2={item.node.frontmatter.link2}
-              link3={item.node.frontmatter.link3}
+              link2={item.node.frontmatter.link3}
+              link3={item.node.frontmatter.link2}
               image={item.node.frontmatter.featuredImage.publicURL}
              />
 

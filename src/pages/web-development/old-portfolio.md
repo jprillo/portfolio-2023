@@ -7,7 +7,7 @@ description: This is the original personal website. The first thing I ever coded
 featuredimage: /img/old-portfolio.png
 description2: I'm just kinding the rest are just even more embarrassing and I ride a manatee over a rainbow on my current one. 
 color1: "#6f13b5"
-link2: "https://www.github.com"
+link2: "https://www.github.com/jprillo/jasonprillo"
 link3: "https://jasonprillo.com"
 ---
 

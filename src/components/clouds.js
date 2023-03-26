@@ -43,17 +43,17 @@ export function Clouds({
              
               <div className="button-container">
                     
-                <div className="col-4 "> 
-                <Button type="primary sm" cta="Resume" link="/" icon={letter} />
+                <div width="50%"> 
+                <Button type="secondary sm" cta="More on Me" link="/about/"  />
                    
                 </div>
        
             </div>
             <div className="social-media-bar">
-              <Link to="/"> <img  src={github}alt="this is a hero" /></Link>
-              <Link to="/"> <img  src={twitter}alt="this is a hero" /></Link>
-              <Link to="/"> <img  src={dribbble}alt="this is a hero" /></Link>
-              <Link to="/"> <img  src={formalflamingo}alt="this is a hero" /></Link>
+              <Link to="https://github.com/jprillo"> <img  src={github}alt="this is a hero" /></Link>
+              <Link to="https://twitter.com/jasonprillo"> <img  src={twitter}alt="this is a hero" /></Link>
+              <Link to="https://dribbble.com/jasonprillo"> <img  src={dribbble}alt="this is a hero" /></Link>
+              <Link to="https://formalflamingo.com"> <img  src={formalflamingo}alt="this is a hero" /></Link>
             </div>
             </div>
 

@@ -38,12 +38,12 @@ const NotFoundPage = () => {
         <span role="img" aria-label="Pensive emoji">
           😔
         </span>{" "}
-        Geeby can't find it dog. That means you fucked up. 
+        Can't find it. That means you messed up. 
         <br />
         {process.env.NODE_ENV === "development" ? (
           <>
             <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
+             <code style={codeStyles}>src/pages/</code>.
             <br />
           </>
         ) : null}
