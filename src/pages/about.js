@@ -30,8 +30,8 @@ export default function About() {
 <div className='pad-top flex gap-1 v-pad h-pad b-pad '>
     <div className='col-6'>
         <h1>Learn More About Mr. Prillo</h1>
-        <p style={{padding: "1em 0"}}> lot of this information is not for everyone and has been redacted, for your safety of course. <br/>
-To see this information you must type in the passord. </p>
+        <p style={{padding: "1em 0"}}> A lot of this information is not for everyone and has been redacted, for your safety of course. <br/>
+To see this information you must type in the password. </p>
 <div style={{marginBottom: "2rem", border: "solid black 2px", padding: ".2rem 2rem", display: "flex"}}>
     <p style={{ textAlign: "left"}}>Hint:</p>
     <p> The hero in "There Will be Blood".</p>
@@ -60,7 +60,7 @@ wearing a Che shirt but Che is a penis as well.</p>
     <div className="flex pad-top " style={{justifyContent: "space-around", paddingLeft: "10%"}}>
         <div className='col-3'><p>2017 - Present</p></div>
         <div className='col-3'><p>Web Developer</p></div>
-        <div className='col-6'><p>I have been working for myself as a web developer in Florida. My agencies name is <Link to="https://formalflamingo.com" style={{color: "pink"}}> Formal Flamingo</Link>. </p></div>
+        <div className='col-6'><p>I have been working for myself as a web developer in Florida. My agency's name is <Link to="https://formalflamingo.com" style={{color: "pink"}}> Formal Flamingo</Link>. </p></div>
    
     </div>
     <div style={{borderBottom: "solid #d5FFFd 4px", width: "90%", marginTop: "3rem", marginLeft: "10%"}}></div>
@@ -90,7 +90,7 @@ wearing a Che shirt but Che is a penis as well.</p>
 
 <h2>Tools</h2>
 <div className='flex pad-top' style={{paddingLeft: "10%", gap: "3rem"}}>
-    <div className='col-6' style={{background: "#2C2C2C", boxShadow: " inset 10px 4px 0px rgba(0, 0, 0, 1)", borderRadius: "25px", height: "300px", padding: "2rem"}}>
+    <div className='col-6' style={{background: "#2C2C2C", boxShadow: " inset 10px 4px 0px rgba(0, 0, 0, 1)", borderRadius: "25px", padding: "2rem"}}>
         <h3>Code</h3>
         <ul>
             <li>React</li>
@@ -101,7 +101,7 @@ wearing a Che shirt but Che is a penis as well.</p>
 
         </ul>
     </div>
-    <div className='col-6'  style={{background: "#E8F7FF", boxShadow: " inset 10px 4px 0px rgba(0, 0, 0, 1)", borderRadius: "25px", height: "300px", padding: "2rem"}}>
+    <div className='col-6'  style={{background: "#E8F7FF", boxShadow: " inset 10px 4px 0px rgba(0, 0, 0, 1)", borderRadius: "25px",  padding: "2rem"}}>
     <h3 style={{color: "indigo"}}>Design</h3>
     <ul className='dark-text' >
             <li>Figma</li>
@@ -114,9 +114,52 @@ wearing a Che shirt but Che is a penis as well.</p>
         </div>
         </div>
 
-        <div>
-            <p>Do you like this site? Do you want a site like this for your own business? Perhaps you are more interested in Geeby the Gatsby starter the trys to kill you. Maybe you are here becauese you want to buy bananas from a fictional antgonist. Possibly you have a yacht and need someone to tour the world with? When I was 30 I went to my first water park. I could tell you all about it. Thank You.  </p>
+       
+        <h2>
+            Other Sick Tricks:
+        </h2>
+        <div className='flex pad-top' style={{marginLeft: "10%", gap: "3rem", background: "purple", boxShadow: " inset 10px 4px 0px rgba(0, 0, 0, 1)", borderRadius: "25px",  padding: "2rem"}}>
+    <div className='col-4' >
+      
+        <ul>
+            <li>Gardening</li>
+            <li>Painting</li>
+            <li>Jeweler</li>
+     
+
+        </ul>
+    </div>
+
+    <div className='col-4' style={{marginLeft: "10%"}}>
+      
+      <ul>
+          <li>Mycology</li>
+          <li>Lepidopterology</li>
+   
+
+
+      </ul>
+  </div>
+    <div className='col-4' >
+   
+    <ul className='dark-text' >
+           
+            <li><p>Prompt Engineering LOL</p></li>
+   
+            
+
+        </ul>
+        </div>
+        </div>
+    
+        <div className='h-pad pad-top'>
+            <p>Do you like this site? Do you want a site like this for your own business?</p>
+            <p>Perhaps you are more interested in Geeby the Gatsby starter the trys to kill you.</p>
+            <p> Maybe you are here becauese you want to buy bananas from a fictional antgonist.</p>
+            <p> Possibly you have a yacht and need someone to tour the world with?</p>
+            <p> When I was 30 I went to my first water park. I could tell you all about it. Thank You.  </p>
         </div> 
+
 </div>
 </Layout>
 

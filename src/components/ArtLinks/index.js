@@ -19,34 +19,42 @@ function ArtLinksContainer() {
     {
       title: 'Animal',
       link: animal,
+      description: "This is a vector drawing of Animal"
     },
     {
-      title: 'Card 2',
+      title: 'Clown Family',
       link: clown,
+      description: "This is my family. A bunch of clowns."
     },
     {
-      title: 'Card 3',
-      link: dumbo
+      title: 'Comethazine on Parade',
+      link: dumbo,
+      description: "Dumbo drunk except Comethazine"
     },
     {
-      title: 'Card 3',
-      link: satan
+      title: 'Comethazine',
+      link: satan,
+      description: "Comethazine vector drawing over a pentagram"
     },
     {
-      title: 'Animal',
+      title: 'Dirty Old Dog',
       link: dog,
+      description: "Vector drawing of trailer park boys after dancing with a dog. "
     },
     {
-      title: 'Card 2',
+      title: 'Guys in Prison',
       link: prison,
+      description: "This is a tribute I made to the worst line in any movie."
     },
     {
-      title: 'Card 3',
-      link: sun 
+      title: 'Sun',
+      link: sun , 
+      description: "This is the sun on my website Jason Weather"
     },
     {
-      title: 'Card 3',
-      link: sauron
+      title: 'Sauronanas',
+      link: sauron,
+      description: "This is the eye of Sauron except the eye is a banana."
     },
   ];
   const handleCardClick = (index) => {
@@ -64,6 +72,7 @@ function ArtLinksContainer() {
           title={card.title}
           link={card.link}
           image={card.link}
+          description={card.description}
           isFlipped={index === flippedIndex}
           onClick={() => handleCardClick(index)}
         />

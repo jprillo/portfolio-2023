@@ -8,7 +8,7 @@ import info from '../images/info.png'
 
 
 
-export default function CardOne({ title, link, isFlipped, onClick, image }) {
+export default function CardOne({ title, link, isFlipped, onClick, image, description }) {
   
     return (
 
@@ -24,10 +24,10 @@ export default function CardOne({ title, link, isFlipped, onClick, image }) {
           <div className="back" style={{padding: isFlipped ? '1rem 1.5rem' : 'none'}}>
             <div>
             <h2>{title}</h2>
-            <p>Beatrice Boner is part of a 10,000 piece NFT collection releasing in 2023.</p>
+            <p>{description}</p>
             </div>
             <div style={{alignSelf: "end"}} >
-        <Link to={link}><img style={{width: "50px"}}  src={info} alt="this is a hero"  /></Link>
+        <Link to={link}><img style={{width: "50px"}}  src={info} alt={description}  /></Link>
         </div>
       </div>
         </div>

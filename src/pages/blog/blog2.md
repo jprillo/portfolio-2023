@@ -1,19 +1,19 @@
 ---
 templateKey: blog-post
 title: 7 Promising NFTs to Keep an Eye On in 2023
-date: 2016-12-17T15:04:10.000Z
+date: 2023-03-17T15:04:10.000Z
 author: Jason Prillo
 authorImage: /img/3.png
 description: The Coffee Taster’s Flavor Wheel, the official resource used by
   coffee tasters, has been revised for the first time this year.
-featuredImage: /img/win_20190324_12_08_00_pro.jpg
-featuredimage: /img/3.png
+featuredImage: /img/nft.png
+featuredimage: /img/nft.png
 color1: "#008000"
 tags:
   - Culture
   - tasting
 ---
-![flavor wheel](/img/3.png "bb")
+![flavor wheel](/img/nft.png "bb")
 
 
 Non-fungible tokens (NFTs) have become a popular trend in the cryptocurrency world since their emergence in 2017. Over the past four years, the market for NFTs has grown exponentially with more projects emerging every year. It is expected that the NFT market will continue to grow and evolve over the next few years. Here are 10 of the most promising NFTs to watch out for in 2023.

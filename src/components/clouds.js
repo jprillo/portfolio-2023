@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from 'gatsby'
 import Button from '../components/button'
-
+import jason from '../images/jason.png'
 
 import twitter from '../images/twitter.png'
 import github from '../images/github.png'
@@ -20,13 +20,7 @@ export function Clouds({
     alignItems: "center"
   }}>
           <div className="col-6">
-          <video controls width="100%" style={{
-        border: "solid black 5px"
-      }}>
-      
-      <source src={video} type="video/mp4" />
-      Sorry, your browser doesn't support videos.
-    </video>
+         <img width="100%" src={jason} alt="this is jason and carl weathers"/>
           </div>
           <div className="col-6" style={{
       position: "relative"
@@ -35,16 +29,22 @@ export function Clouds({
         color: "black",
         padding: 0,
         marginTop: 0
-      }}>Meet Mr. Prillo</h2>
+      }}>   Greetings! </h2>
               <p className="col-9" style={{
-        color: "black"
+        color: "black", marginBottom: '2rem'
       }}>
-              Hello there, my name is Jason Prillo. I am a web developer and digtal artist based in Central Florida. I started Formal Flamingo Web Design in 2016 and specialize in making unique websites. </p><br />
+          Meet Jason Prillo, who appears on the left side of the photo. Jason operates Formal Flamingo Web Development, a Central Florida-based enterprise that specializes in crafting one-of-a-kind websites and web apps.</p>
+          <p className="col-9" style={{
+        color: "black"}}> The gentleman on the right is none other than Carl Weathers, whom Jason had the pleasure of meeting at a convention. The encounter with Mr. Weathers was delightful, and Jason can share more details about it upon request.</p><br />
              
               <div className="button-container">
                     
                 <div width="50%"> 
                 <Button type="secondary sm" cta="More on Me" link="/about/"  />
+                   
+                </div>
+                <div width="50%"> 
+                <Button type="secondary sm" cta="More on Carl" link="https://en.wikipedia.org/wiki/Carl_Weathers"  />
                    
                 </div>
        
