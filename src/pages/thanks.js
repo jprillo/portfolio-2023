@@ -5,7 +5,7 @@ export default function Clients() {
   
   return <div >
       <Layout>
-          <div style={{height: "100vh"}}>
+          <div style={{height: "100vh", background: "#202124"}}>
           <h1>Thanks, we will be in touch.</h1>
 
           </div>
