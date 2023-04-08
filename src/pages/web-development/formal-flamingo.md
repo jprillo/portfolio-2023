@@ -12,8 +12,7 @@ link3: "https://www.formalflamingo.com"
 ---
 
 ![flavor wheel](/img/formal.png)
-Formal Flamingo is a web development agency in Palm Bay Florida. 
+Formal Flamingo is a web development agency in Palm Bay Florida. We give business' a leg up on the competitiion. Get it. It is a flamingo joke. No one really likes it though.  
 
-We started doing a variety of small jobs like making powerpoints and setting up emails to developing full stack applications
+We started doing a variety of small jobs like making powerpoints and setting up emails to developing full stack applications. Want a website like this for your business? Maybe your ex wife is getting married and you want to make a website about her hunky new man's criminal history. Let's talk about. 
 
-I have a blog I took off because I am terrible writer but I have a feeling my new employee "Allen Iverson" is going to help me out a lot with that. 

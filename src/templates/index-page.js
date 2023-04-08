@@ -84,7 +84,7 @@ export const IndexPageTemplate = ({
    
     <div style={{textAlign: 'center', width: "100%", display: "flex", justifyContent: "center", marginTop: "-2px"}}>
       
-      <Button cta="See Them All" link="/code" type="primary sm" icon={arrow}  />
+      <Button cta="See Them All" link="/web-development" type="primary sm" icon={arrow}  />
       </div>
 
       </div>

@@ -13,5 +13,7 @@ link3: "https://earringsforholidays.com"
 
 ![flavor wheel](/img/earrings-for-holidays.png)
 
-Earrings for holidays is a square eccomerce site. We were using Square for the ability to sell earrings on location with there easy to use credit card app and I don't think we paid anything to get started and have no monthly. It has an API as well that I could populate a front end with but we are going to have to sell a lot more earrings before I do that. 
+Earrings for holidays is a Square eccomerce site. We were using Square for the ability to sell earrings on location with there easy to use credit card app and I don't think we paid anything to get started and have no monthly. It has an API as well that I could populate a front end with but we are going to have to sell a lot more earrings before I do that. 
+
+I wish it was earrings for all the time so we could be busy all the time. As a life long athiest it is however kinda funny to sell Christmas earrings. If you have made it this far through my list of personal project this shouldn't be very surprising. 
 
