@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 author: Jason Prillo
-featuredImage: https://images.unsplash.com/photo-1610337673044-720471f83677?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3RhdGljfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60
+featuredImage: /img/frame-1-4-.png
 color1: "#D98880"
 date: 2023-04-08T02:58:43.480Z
 authorImage: /img/3.png
