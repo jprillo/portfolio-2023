@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 author: Jason Prillo
-featuredImage: https://images.unsplash.com/photo-1562577309-2592ab84b1bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80
+featuredImage: /img/component-1-2-.png
 featuredimage: /img/3.png
 color1: "#3D5A80"
 date: 2023-03-15T14:04:10.000Z
@@ -13,7 +13,7 @@ description: Technical SEO is the process of optimizing your website so that
 tags:
   - code
 ---
-![seo](https://images.unsplash.com/photo-1562577309-2592ab84b1bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)
+![seo](/img/component-1-2-.png)
 
 As technology continues to evolve and more businesses move online, technical SEO will become increasingly important in 2023. Technical SEO is the process of optimizing your website so that search engines can better understand and index it, thus giving your website better visibility in search results.
 
@@ -23,17 +23,17 @@ In 2023, webmasters will need to take extra steps to ensure their website is opt
 
 Website speed is one of the most important factors for SEO in 2023. Search engines prefer websites that load quickly, as this helps create a better user experience. Webmasters should optimize their websites by compressing images, minifying CSS and JavaScript files, and using a Content Delivery Network (CDN).
 
-### Crawlability: 
+### Crawlability:
 
 ![crawling baby not a robot. wtf. ](https://plus.unsplash.com/premium_photo-1663091820293-fdfb35194f7c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
 
 Search engine crawlers will need to be able to crawl a website easily in 2023. Webmasters should ensure their website has a sitemap and internal linking structure that is easy for the crawlers to navigate. They should also make sure the robots.txt file is correctly configured.
 
-### Mobile-Friendliness: 
+### Mobile-Friendliness:
 
 Mobile-friendliness will be a major ranking factor in 2023. With more people accessing the internet via mobile devices, webmasters will need to ensure their website is optimized for mobile. This includes ensuring the website has a responsive design, fast loading times, and properly sized images.
 
-### Structured Data: 
+### Structured Data:
 
 Structured data helps search engines understand the content on a website, so webmasters should ensure their website has structured data markup in 2023. This can be done using the Schema.org vocabulary or other markup languages like JSON-LD.
 
