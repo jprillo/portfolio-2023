@@ -19,12 +19,9 @@ import juice from '../../images/art-images/juice-bear.png'
 import law from '../../images/art-images/lawyers.png'
 import morty from '../../images/art-images/there-will-be-morty.png'
 import yavo from '../../images/art-images/yavo.png'
+import key from '../../images/art-images/keyglock.png'
+import falsep from '../../images/art-images/false.png'
 
-
-
-
-
-import FeaturedWebsite from '../../components/featured-website'
 
 
 export default function Code({data}) {
@@ -36,6 +33,14 @@ export default function Code({data}) {
       {
         title: 'Animal',
         link: animal,
+      },
+      {
+        title: 'Card 2',
+        link: falsep,
+      },
+      {
+        title: 'Card 2',
+        link: key,
       },
       {
         title: 'Card 2',

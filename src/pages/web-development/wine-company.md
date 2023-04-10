@@ -13,6 +13,6 @@ link3: "https://www.vyntrade.com"
 
 ---
 
-![flavor wheel](/img/Vyntrade.png)
+![wine company screenshot](/img/Vyntrade.png)
 
 This is actually the first Geeby starter but I was hired to make this site in the middle of development and just changed gears. I am pretty sure thier github page is still called gatsby3starter. it is updated but what I stupid title. 

@@ -115,7 +115,7 @@ wearing a Che shirt but Che is a penis as well.</p>
         </div>
 
        
-        <h2>
+        <h2 style={{padding: "4rem 0"}}>
             Other Sick Tricks:
         </h2>
         <div className='flex pad-top' style={{marginLeft: "10%", gap: "3rem", background: "purple", boxShadow: " inset 10px 4px 0px rgba(0, 0, 0, 1)", borderRadius: "25px",  padding: "2rem"}}>

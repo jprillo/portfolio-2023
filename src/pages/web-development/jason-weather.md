@@ -11,7 +11,7 @@ link2: "https://github.com/jprillo/weather-app"
 link3: "https://jasonweather.netlify.app"
 ---
 
-![flavor wheel](/img/jason-weather.png)
+![jasonweather screenshot](/img/jason-weather.png)
 
 Jason weather is the only place where you can find out what the weather is like where I am and no one else. Trust me because I've looked. Most of these so called weather apps require me to put in my zip code. You don't have my zip code. How are you to find out what the weather is like where I am on a standard weather site. One that has no information about me at all. 
 

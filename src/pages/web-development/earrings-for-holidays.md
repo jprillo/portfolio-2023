@@ -11,7 +11,7 @@ link2: "https://github.com/jprillo/earringlanding"
 link3: "https://earringsforholidays.com"
 ---
 
-![flavor wheel](/img/earrings-for-holidays.png)
+![earrings for holidays screenshot](/img/earrings-for-holidays.png)
 
 Earrings for holidays is a Square eccomerce site. We were using Square for the ability to sell earrings on location with there easy to use credit card app and I don't think we paid anything to get started and have no monthly. It has an API as well that I could populate a front end with but we are going to have to sell a lot more earrings before I do that. 
 

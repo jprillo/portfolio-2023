@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 author: Jason Prillo
-featuredImage: /img/component-1-2-.png
+featuredImage: /img/false.png
 featuredimage: /img/3.png
 color1: "#3D5A80"
 date: 2023-03-15T14:04:10.000Z

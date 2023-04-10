@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 author: Jason Prillo
-featuredImage: /img/frame-1-4-.png
+featuredImage: /img/keyglock.png
 color1: "#D98880"
 date: 2023-04-08T02:58:43.480Z
 authorImage: /img/3.png

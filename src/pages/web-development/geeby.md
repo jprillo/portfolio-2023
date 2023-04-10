@@ -11,7 +11,7 @@ link2: "https://github.com/jprillo/geeby"
 link3: "https://geeby.netlify.app/"
 ---
 
-![flavor wheel](/img/geeby.png)
+![geeby screenshot](/img/geeby.png)
 
 Geeby is a Gastby starter that uses Netlify to manage content and hosting. Static site generators are great for diplaying business websites and I made this to serve clients in a way that they could manage thier own content and blog without any overhead or having to talk to me. Like at all. 
 
