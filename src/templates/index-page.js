@@ -152,10 +152,18 @@ const IndexPage = ({ data }) => {
           helmet = {
             <Helmet titleTemplate="%s | Blog">
             <title>{`${h.headingOne}`}</title>
-            <meta
-              name="description"
-              content={`${h.subheadingOne}`}
-            />
+            <meta name="description"  content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida. "/>         
+            <meta name="keywords" content="web development palm bay florida business web based software development melbourne fl" />
+            <meta property="og:title" content={h.headingOne} />
+            <meta property="og:description" content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida." />
+            <meta property="og:image" content={h.heroImage.publicURL} />
+            <meta property="og:type" content="article" />
+            <meta property="og:locale" content="en_US" />
+            <meta property="og:site_name" content="Your Website Name" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={h.headingOne} />
+            <meta name="twitter:description" content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida. "/>
+            <meta name="twitter:image" content={h.heroImage.publicURL} />
           </Helmet>
           }
 
