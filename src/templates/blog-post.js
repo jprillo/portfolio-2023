@@ -92,12 +92,22 @@ const BlogPost = ({ data }) => {
         author={post.frontmatter.author}
         authorImage={post.frontmatter.authorImage.publicURL}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Palm Bay Web Development">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
-              content={`${post.frontmatter.description}`}
-            />
+              content={`${post.frontmatter.description}`}         />
+
+            <meta property="og:title" content={post.frontmatter.title} />
+            <meta property="og:description" content={post.frontmatter.description} />
+            <meta property="og:image" content={post.frontmatter.featuredImage.publicURL} />
+            <meta property="og:type" content="article" />
+            <meta property="og:locale" content="en_US" />
+            <meta property="og:site_name" content="Palm Bay Web Development " />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={post.frontmatter.title} />
+            <meta name="twitter:description" content={post.frontmatter.description}/>
+            <meta name="twitter:image" content={post.frontmatter.featuredImage.publicURL} />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -127,6 +137,9 @@ export const pageQuery = graphql`
         color1
         description
         tags
+        featuredImage {
+          publicURL
+        }
         authorImage {
           publicURL
         }

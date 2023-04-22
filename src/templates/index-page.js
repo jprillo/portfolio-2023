@@ -150,7 +150,7 @@ const IndexPage = ({ data }) => {
           headingFour = {h.headingFour} 
           webprojects = {webprojects}
           helmet = {
-            <Helmet titleTemplate="%s | Blog">
+            <Helmet titleTemplate="%s | Jason Prillo Web Development">
             <title>{`${h.headingOne}`}</title>
             <meta name="description"  content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida. "/>         
             <meta name="keywords" content="web development palm bay florida business web based software development melbourne fl" />
