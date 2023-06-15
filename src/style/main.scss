@@ -14,26 +14,26 @@
 ::-webkit-scrollbar {
     width: 20px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+    box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
   }
-   
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: $primary-color; 
+    background: $primary-color;
     border-radius: 10px;
   }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: $hover-color; 
+    background: $hover-color;
   }
    /* Handle on hover */
    ::-webkit-scrollbar-thumb:active {
-    background: $active-color; 
+    background: $active-color;
   }
 
 
@@ -49,19 +49,19 @@
 }
 .padd{
     padding: 0 0 0 0;
-    @include breakpoint(md){ 
+    @include breakpoint(md){
         padding: 0 0 0 50px;
-       
+
     }
 }
 .blog-article{
     border-radius: 25px;
-    border: solid 10px $primary-color;    
+    border: solid 10px $primary-color;
     background-repeat: no-repeat;
     background-position: center;
     display:flex;
     flex-direction: column;
-    justify-content: flex-end;      
+    justify-content: flex-end;
     background-size: 150% 150%;;
     position: relative;
     overflow: hidden;
@@ -70,10 +70,10 @@
     h1{
         font-size: 30px;
     }
- 
-    &:hover{     
+
+    &:hover{
     background-size: 200% 200%;
-     
+
     }
     &:hover h1{
        color: rgb(187, 178, 178);
@@ -81,10 +81,10 @@
     &:hover p{
         color: rgb(187, 178, 178);
      }
-    
 
-    
-    
+
+
+
 }
 .cover{
     width: 110%;
@@ -99,17 +99,17 @@
 .feature{
     height: 550px;
     padding: 1em 1.5em;
-    @include breakpoint(md){ 
+    @include breakpoint(md){
         padding: 2em 3em;
     }
-  
+
    span{
     font-size: 25px;
     font-family: $primary-font;
    }
     h1{
         font-size: 40px;
-        @include breakpoint(md){ 
+        @include breakpoint(md){
             font-size: 40px;
         }
 
@@ -118,32 +118,32 @@
         font-size: 50px;
     }
 
-   
+
 }
 .nnn{
     width: calc(100% - 1vh);
-    @include breakpoint(md){ 
+    @include breakpoint(md){
         width: calc(100% - 1vh);
     }
-    @include breakpoint(lg){ 
+    @include breakpoint(lg){
         width: calc(50% - 1vh);
     }
 
-    
-    
+
+
 }
 .normal {
     height: 250px;
     padding: 1em 1.5em;
-   
-   
+
+
    p{
     display: none;
    }
     h1{
         font-size: 25px;
     }
- 
+
     span{
         font-family: $primary-font;
         font-size: 20px;
@@ -168,7 +168,7 @@ margin-bottom: 1em;
 }
 .article{
     height: 22.5vh;
-    
+
 }
 .column{
     display: flex;
@@ -218,9 +218,9 @@ p{
         min-width: 250px;
         img{
             width: 100%;
-           
+
         }
-    
+
     }
 }
 .cardOne{
@@ -234,15 +234,15 @@ p{
     }
     img {
         height: 40px;
-        
-        
+
+
     }
 }
 
 .icon{
     width: 75px;
 }
-.tag-box{ 
+.tag-box{
     padding: 1em;
     font-size: 20px;
     display: flex;
@@ -255,9 +255,9 @@ p{
     &:active{
         background-color: $active-color !important;
     }
- 
-   
-    
+
+
+
     color: white;
     p{
         font-size: 20px;
@@ -266,34 +266,34 @@ p{
 .main-wrap{
     padding: 0 3vw;
     background-color: $background-color;
-  
-    @include breakpoint(md){ 
+
+    @include breakpoint(md){
         padding: 0 5vw;
     }
-    @include breakpoint(lg){ 
+    @include breakpoint(lg){
         padding: 0 10vw;
     }
-   
-   
+
+
 }
 
 
 .blog-wrap{
     padding: 20vh 0vw;
     ;
-   
-  
-    @include breakpoint(md){ 
+
+
+    @include breakpoint(md){
         padding: 20vh 2vw;
     }
-    @include breakpoint(lg){ 
+    @include breakpoint(lg){
         padding: 20vh 3vw;
     }
-   
-   
+
+
 }
 
-.cloud{ 
+.cloud{
     padding-top: 110px ;
     padding-bottom: 110px ;
 }
@@ -304,8 +304,8 @@ p{
     gap: 2em;
     flex-direction: column;
 
-   
-    @include breakpoint(sm){ 
+
+    @include breakpoint(sm){
         flex-direction: row;
         margin-top: 2.5em;
         width: 100%;
@@ -329,7 +329,7 @@ p{
     img{
         height: 160px;
     }
-  
+
 }
 
 label p{
@@ -341,7 +341,7 @@ input, textarea{
     padding: .25rem;
     margin-bottom: 2rem;
     width: 100%;
-   
+
 }
 input:focus, textarea:focus, select:focus{
     outline: none;
@@ -390,7 +390,7 @@ form{
 }
 .t1:hover{
     background: #4deeea;
- 
+
 }
 .t1:hover .all{
     background: red;
@@ -407,20 +407,20 @@ form{
 
 .col-4-gap {
     width:100%;
-    @include breakpoint(md){       
-      width: 34%; 
+    @include breakpoint(md){
+      width: 34%;
     min-width:300px;
-      margin-bottom: 3rem;       
+      margin-bottom: 3rem;
      }  }
 .gap-3{
     gap: 2%;
 }
 .col-8-gap {
     width:100%;
-    @include breakpoint(md){       
-      width: 65.5%; 
+    @include breakpoint(md){
+      width: 65.5%;
     min-width:300px;
-      margin-bottom: 3rem;       
+      margin-bottom: 3rem;
      }  }
 .gap-3{
     gap: 2%;
@@ -434,68 +434,68 @@ form{
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   .card {
 
     position: relative;
-    margin: 10px;
+    margin-bottom: 3rem;
     perspective: 800px;
     transition: transform 0.5s;
     transform-style: preserve-3d;
     cursor: pointer;
     min-width: 250px;
     width: 100%;
-    @include breakpoint(md){ 
+    @include breakpoint(md){
     width: 20%;
     margin-bottom: 5rem;
     }
   }
-  
+
   .card.flipped {
     transform: rotateY(180deg);
   }
-  
+
   .front,
   .back {
     position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     backface-visibility: hidden;
-    background: #ECE2CE;  
+    background: #ECE2CE;
     border: 2px solid black;
     p{
         color: black;
     }
-    
+
     img{
         width: 50px;
     }
   }
-  
+
   .back {
     transform: rotateY(180deg);
     display: none;
   }
-  
+
   .card.flipped .back {
     display: flex;
     flex-direction: column;
   }
-  
+
   .card h2 {
     font-size: 1.2rem;
     margin: 0;
     text-align: center;
   }
-  
+
   .card a {
     font-size: 0.9rem;
     color: blue;
     text-decoration: underline;
   }
-  
+
   .card a:hover {
     color: darkblue;
   }
@@ -507,9 +507,9 @@ form{
   }
   .projects-image{
         width: 200%;
-        @include breakpoint(md){ 
+        @include breakpoint(md){
             width: 100%;
-           
+
             }
   }
   .foot-links{

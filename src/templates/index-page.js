@@ -13,7 +13,7 @@ import hills from '../images/hill.png'
 import video from '../images/intro-video.mp4'
 import letter from '../images/letter.png'
 
-import Preloader from '../components/preloader'
+
 import { Clouds } from '../components/clouds';
 import FeaturedWebsite from '../components/featured-website'
 import Hero from '../components/hero'
@@ -24,29 +24,29 @@ import Footer from '../components/footer'
 
 
 // eslint-disable-next-line
-export const IndexPageTemplate = ({   
+export const IndexPageTemplate = ({
   headingOne,
   subheadingOne,
   heroButtonCtaOne,
-  heroButtonCtaTwo, 
+  heroButtonCtaTwo,
   heroButtonLinkOne,
   heroButtonLinkTwo,
   image,
-  helmet, 
+  helmet,
   webprojects
 
 }) => {
- 
- 
-  
+
+
+
   return (
 
     <div style={{position: "relative", overflowY: "hidden"}} >
      {helmet || ""}
 
-     <Preloader/>
-    
- 
+
+
+
       <Hero
           headingOne={headingOne}
           subheadingOne={subheadingOne}
@@ -55,9 +55,9 @@ export const IndexPageTemplate = ({
           heroButtonCtaTwo={heroButtonCtaTwo}
           heroButtonLinkOne={heroButtonLinkOne}
           heroButtonLinkTwo={heroButtonLinkTwo}
-          
+
         />
-     
+
 <Clouds   video={video} arrow={arrow} letter={letter}  />
 <div style={{background: "#2E00B0"}}>
 <img style={{verticalAlign: "top"}} width= "100%" src={cloudtop} alt="this is the top of the clouds" />
@@ -65,7 +65,7 @@ export const IndexPageTemplate = ({
     <div className="v-pad h-pad" style={{background: "#2E00B0", overflowX: "hidden"}}>
     <img className='projects-image' width= "100%" src={projects} alt="this is a hero" />
     <div >
-     
+
       <div className="v-pad gap-1" style={{display: "flex", flexDirection: "column" }}>
       {webprojects.slice(2, 4).map((item) => (
               <FeaturedWebsite
@@ -81,28 +81,28 @@ export const IndexPageTemplate = ({
 
 ))}
 
-   
+
     <div style={{textAlign: 'center', width: "100%", display: "flex", justifyContent: "center", marginTop: "-2px"}}>
-      
+
       <Button cta="See Them All" link="/web-development" type="primary sm" icon={arrow}  />
       </div>
 
       </div>
 
 
- 
 
-  
-    </div> 
+
+
+    </div>
     </div>
     <div style={{background: "#2E00B0 "}}>
 <img style={{verticalAlign: "top"}} width= "100%" src={hills} alt="these are hills" />
 </div>
     <div className="h-pad gap-2 b-pad" style={{ background: "#2f9733"}}>
-    
+
 <ArtLinks/>
 <div style={{textAlign: 'center', width: "100%", display: "flex", justifyContent: "center", marginTop: "-2px"}}>
-      
+
       <Button cta="See Them All" link="/graphic-design" type="primary sm" icon={arrow}  />
       </div>
 
@@ -112,19 +112,19 @@ export const IndexPageTemplate = ({
 <Footer color="dark-nav"/>
 
 </div>
-    
-      
 
 
 
-    
 
 
-   
+
+
+
+
 
 
 </div>
-    
+
   )
 }
 
@@ -133,10 +133,10 @@ const IndexPage = ({ data }) => {
   const h = home.frontmatter;
   const p = data.projects;
   const webprojects = p.edges
- 
+
   return (
 
-   
+
       <IndexPageTemplate
           headingOne = {h.headingOne}
           subheadingOne = {h.subheadingOne}
@@ -145,14 +145,14 @@ const IndexPage = ({ data }) => {
           heroButtonLinkOne = {h.heroButtonLinkOne}
           heroButtonLinkTwo = {h.heroButtonLinkTwo}
           image = {h.heroImage.publicURL}
-          headingTwo = {h.headingTwo} 
+          headingTwo = {h.headingTwo}
           headingThree = {h.headingThree}
-          headingFour = {h.headingFour} 
+          headingFour = {h.headingFour}
           webprojects = {webprojects}
           helmet = {
             <Helmet titleTemplate="%s | Jason Prillo Web Development">
             <title>{`${h.headingOne}`}</title>
-            <meta name="description"  content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida. "/>         
+            <meta name="description"  content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida. "/>
             <meta name="keywords" content="web development palm bay florida business web based software development melbourne fl" />
             <meta property="og:title" content={h.headingOne} />
             <meta property="og:description" content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida." />
@@ -164,7 +164,29 @@ const IndexPage = ({ data }) => {
             <meta name="twitter:title" content={h.headingOne} />
             <meta name="twitter:description" content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida. "/>
             <meta name="twitter:image" content={h.heroImage.publicURL} />
+            <script type="application/ld+json">
+            {`
+              {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": "${h.headingOne}",
+                "description": "Jason Prillo is a web developer and graphic artist from Palm Bay, Florida.",
+                "image": "${h.heroImage.publicURL}",
+                "author": {
+                  "@type": "Person",
+                  "name": "Jason Prillo"
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "Jason Prillo Web Development",
+
+                },
+
+              }
+            `}
+          </script>
           </Helmet>
+
           }
 
       />
@@ -185,7 +207,7 @@ export const query = graphql`
   query($slug: String!) {
   index:  markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      frontmatter {        
+      frontmatter {
         headingOne
         subheadingOne
         heroButtonCtaOne
@@ -198,9 +220,9 @@ export const query = graphql`
         headingTwo
         headingThree
         headingFour
-    
-        
-   
+
+
+
       }
     }
 
