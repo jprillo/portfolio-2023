@@ -151,18 +151,18 @@ const IndexPage = ({ data }) => {
           webprojects = {webprojects}
           helmet = {
             <Helmet titleTemplate="%s | Jason Prillo Web Development">
-            <title>{`${h.headingOne}`}</title>
-            <meta name="description"  content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida. "/>
+            <title>Web Developer and Graphic Artist in Melbourne, FL</title>
+            <meta name="description"  content="Discover the Creative World of Jason Prillo, a Talented Web Developer and Graphic Artist Based in Melbourne, Florida. Explore Unique Web Designs, Striking Vector Art, and Engage with His Diverse Portfolio."/>
             <meta name="keywords" content="web development palm bay florida business web based software development melbourne fl" />
             <meta property="og:title" content={h.headingOne} />
             <meta property="og:description" content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida." />
             <meta property="og:image" content={h.heroImage.publicURL} />
             <meta property="og:type" content="article" />
             <meta property="og:locale" content="en_US" />
-            <meta property="og:site_name" content="Your Website Name" />
+            <meta property="og:site_name" content="Jason Prillo Web Development" />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={h.headingOne} />
-            <meta name="twitter:description" content="Jason Prillo is a web developer and graphic artist from Palm Bay, Florida. "/>
+            <meta name="twitter:description" content="Discover the Creative World of Jason Prillo, a Talented Web Developer and Graphic Artist Based in Melbourne, Florida. Explore Unique Web Designs, Striking Vector Art, and Engage with His Diverse Portfolio."/>
             <meta name="twitter:image" content={h.heroImage.publicURL} />
             <script type="application/ld+json">
             {`
@@ -170,7 +170,7 @@ const IndexPage = ({ data }) => {
                 "@context": "https://schema.org",
                 "@type": "Article",
                 "headline": "${h.headingOne}",
-                "description": "Jason Prillo is a web developer and graphic artist from Palm Bay, Florida.",
+                "description": "Discover the Creative World of Jason Prillo, a Talented Web Developer and Graphic Artist Based in Melbourne, Florida. Explore Unique Web Designs, Striking Vector Art, and Engage with His Diverse Portfolio.",
                 "image": "${h.heroImage.publicURL}",
                 "author": {
                   "@type": "Person",

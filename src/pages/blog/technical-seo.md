@@ -13,7 +13,7 @@ description: Technical SEO is the process of optimizing your website so that
 tags:
   - code
 ---
-![seo](/img/component-1-2-.png)
+![seo](/img/office.jpg)
 
 As technology continues to evolve and more businesses move online, technical SEO will become increasingly important in 2023. Technical SEO is the process of optimizing your website so that search engines can better understand and index it, thus giving your website better visibility in search results.
 
@@ -39,7 +39,7 @@ Structured data helps search engines understand the content on a website, so web
 
 ### Security:
 
- Security should be a top priority for webmasters in 2023. Hackers are constantly finding new ways to exploit websites, so it is important to ensure your website is as secure as possible. This includes using a secure socket layer (SSL) certificate, using strong passwords, and regularly patching the website. 
+ Security should be a top priority for webmasters in 2023. Hackers are constantly finding new ways to exploit websites, so it is important to ensure your website is as secure as possible. This includes using a secure socket layer (SSL) certificate, using strong passwords, and regularly patching the website.
 
 ### Website Architecture:
 

@@ -1,11 +1,10 @@
 ---
 templateKey: blog-post
-title: 7 Promising NFTs to Keep an Eye On in 2023
+title: 7 Promising NFTs to Keep an Eye On
 date: 2023-03-17T15:04:10.000Z
 author: Jason Prillo
 authorImage: /img/3.png
-description: The Coffee Taster’s Flavor Wheel, the official resource used by
-  coffee tasters, has been revised for the first time this year.
+description: Non-fungible tokens (NFTs) have become a popular trend in the cryptocurrency world since their emergence in 2017. 
 featuredImage: /img/nft.png
 featuredimage: /img/nft.png
 color1: "#008000"
@@ -20,7 +19,7 @@ Non-fungible tokens (NFTs) have become a popular trend in the cryptocurrency wor
 
 
 
-## Decentraland (MANA): 
+## Decentraland (MANA):
 ![this oinskojiob](https://storage.googleapis.com/eradmin-staging-bucket/Blog_header_Decentraland_overview_ecf782e987/Blog_header_Decentraland_overview_ecf782e987.png)
 Decentraland (MANA) is a virtual reality platform built on the Ethereum blockchain that allows users to create, experience, and monetize content and applications in a decentralized, open-world environment. Launched in 2017, Decentraland has quickly become one of the most popular blockchain-based virtual reality platforms in the world, attracting thousands of users and developers to its platform.
 
@@ -48,7 +47,7 @@ In Decentraland, users own their parcels of LAND and the applications and experi
 
 Decentraland is also important because it is at the forefront of the emerging web3 movement, which seeks to create a more decentralized and user-centric internet. By building a virtual world on the Ethereum blockchain, Decentraland is helping to drive the adoption and development of decentralized technologies and applications
 
-## CryptoKitties (CK): 
+## CryptoKitties (CK):
 ![this oinskojiob](https://i.seadn.io/gcs/static/banners/cryptokitties-banner2.png?auto=format&w=1920)
 CryptoKitties (CK) is a blockchain-based game that was first launched in late 2017. The game allows users to buy, sell, breed, and trade unique digital cats, known as CryptoKitties, on the Ethereum blockchain. In this blog post, we will dive into what CryptoKitties is, how it works, and why it became one of the first major NFT projects to gain widespread popularity.
 
@@ -75,7 +74,7 @@ In addition, the breeding mechanic adds an element of strategy and ownership to 
 Finally, the fact that CryptoKitties are stored on the Ethereum blockchain as NFTs means that they are highly secure and transparent. Each CryptoKitty can be easily verified and traced back to its original owner, providing a level of transparency that is not possible with traditional art or collectibles.
 
 
-## Hashmasks (HM): 
+## Hashmasks (HM):
 ![this oinskojiob](https://i.seadn.io/gae/D1SwtrOZMJRnc7aDHGX1ANHVsL67nPXOma5bVuvgVTlocTcVNs_t76YYI5FMfjfcDpgjV7get7jx2vLSjj4UefSiXuxJf75Rx7rwTg?auto=format&w=1920)
 
 Hashmasks (HM) is a new non-fungible token (NFT) project that has taken the blockchain community by storm. Launched in late January 2021, Hashmasks has quickly become one of the most talked-about NFT projects in the web3 space. In this blog post, we will dive into what Hashmasks is, how it works, and why it has gained so much popularity in such a short amount of time.
@@ -133,13 +132,13 @@ As the popularity of NFTs and blockchain-based platforms continues to grow, we c
  ENSdomains are digital domains powered by the Ethereum blockchain. They are used to create a unique and immutable domain name that can be used to host websites and other digital content.
 
 
-## Axie Infinity (AXS): 
+## Axie Infinity (AXS):
 ![this oinskojiob](https://storage.googleapis.com/eradmin-staging-bucket/Blog_header_Decentraland_overview_ecf782e987/Blog_header_Decentraland_overview_ecf782e987.png)
 
 Axie Infinity is a blockchain-based game in which users can buy, sell, and trade digital monsters called Axies. The game has gained massive popularity since its launch in 2018 and is expected to continue to grow over the next few years.
 
 
-## Sorare (SOR): 
+## Sorare (SOR):
 ![this oinskojiob](https://storage.googleapis.com/eradmin-staging-bucket/Blog_header_Decentraland_overview_ecf782e987/Blog_header_Decentraland_overview_ecf782e987.png)
 
 Sorare is a blockchain-based fantasy football game where users can buy, sell, and trade digital cards of real players. The game has gained massive popularity since its launch in 2019 and is expected to continue to grow over the next
