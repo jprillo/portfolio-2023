@@ -4,7 +4,7 @@ title: 7 Promising NFTs to Keep an Eye On
 date: 2023-03-17T15:04:10.000Z
 author: Jason Prillo
 authorImage: /img/3.png
-description: Non-fungible tokens (NFTs) have become a popular trend in the cryptocurrency world since their emergence in 2017. 
+description: Non-fungible tokens (NFTs) have become a popular trend in the cryptocurrency world since their emergence in 2017.
 featuredImage: /img/nft.png
 featuredimage: /img/nft.png
 color1: "#008000"

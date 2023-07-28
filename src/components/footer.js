@@ -6,7 +6,7 @@ import twitter from '../images/twitter.png'
 import github from '../images/github.png'
 import dribbble from '../images/dribbble.png'
 import formalflamingo from '../images/formalflamingo.png'
-import logo from "../images/logo.png"
+
 
 export default function Footer({color}) {
     return (

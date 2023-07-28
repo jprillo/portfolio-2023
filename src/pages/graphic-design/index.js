@@ -2,7 +2,7 @@ import React from "react"
 import Layout from '../../components/layout2'
 import { graphql} from "gatsby"
 import { Helmet } from 'react-helmet'
-import CardOne from '../../components/cardOne'
+
 
 import animal from '../../images/art-images/animal.png'
 import clown from '../../images/art-images/clown-family.png'
@@ -27,7 +27,7 @@ import falsep from '../../images/art-images/false.png'
 export default function Code({data}) {
     const d = data.allMarkdownRemark;
 
-    const otherPosts = d.edges
+   
 
     const artcards = [
       {
@@ -88,7 +88,7 @@ export default function Code({data}) {
       },
       {
         title: 'Card 3',
-        link: yavo 
+        link: yavo
       },
       {
         title: 'Card 3',
@@ -99,14 +99,14 @@ export default function Code({data}) {
         link: sun,
       },
     ];
-    
+
   return <div >
       <Helmet>
         <title>Web Development | Jason prillo</title>
         <meta name="description" content="These are some of my latest projects." />
         <meta name="theme-color" content="red" />
       </Helmet>
-     
+
 <div style={{background: "#202124"}}>
 <Layout>
   <div className="pad-top center">
@@ -114,23 +114,23 @@ export default function Code({data}) {
     <p>This is some of my latest projects. I have only included things I ethier own or have eplicit permission to use.</p>
     </div>
   <div className=" v-pad gap-2 h-pad">
- 
+
     <div className="col-12">
-  
+
       <div className="column v-pad-5">
         <div >
         {artcards.map((card, index) => (
       <img width="50%" src={card.link}/>
       ))}
-   
+
       </div>
     </div>
     </div>
-   
+
     </div>
     </Layout>
 </div>
- 
+
   </div>
 }
 
