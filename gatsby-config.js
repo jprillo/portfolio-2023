@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Geeby | Gatsby Minimum Starter",
-    siteUrl: `https://gatsby3starter.netlify.app`,
+    title: "Jason Prillo Web Development",
+    siteUrl: `https://jasonprillo.com`,
     "menuLinks": [
       {
         "name": "HOME",
@@ -14,7 +14,7 @@ module.exports = {
     ]
   },
   plugins: [
-    
+
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     {
@@ -47,7 +47,7 @@ module.exports = {
       },
     },
     {
-      
+
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
