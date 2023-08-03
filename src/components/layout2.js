@@ -10,7 +10,7 @@ import TagManager from "react-gtm-module";
 
 const Layout = ({ children, color }) => {
   useEffect(() => {
-    TagManager.initialize({ gtmId: " G-WVS33VVKCS" });
+    TagManager.initialize({ gtmId: "G-WVS33VVKCS" });
   }, []);
   const [isActive, setIsActive] = useState(false)
 
